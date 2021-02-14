@@ -1,0 +1,8 @@
+HEADER
+{"alg": "HS256","typ": "JWT"}
+
+PAYLOAD
+{"name": "Andrea Maria Lopez Flores", "id": "201404134"}
+
+SECRET
+al2onp0edz1frl4oer0eas4m1a3r4i12
