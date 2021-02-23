@@ -1,4 +1,10 @@
-# Practica 3
+# Practica 4
+El serivicio ESB se encuentra en la carpeta con el mismo nombre.
+Dentro se encuentra un archivo index.js donde se realizan todas las llamadas a los otros serivicios.
+
+	- localhost:8089
+
+# Practica 3 (servicios anteriores)
 Cada servicio está en una carpeta diferente
     - Cliente
     - Restaurante
@@ -11,8 +17,8 @@ En el video se muestra el funcionamiento completo.
 En la documentación se muestra a detalle el desarrollo.
 
     - Cliente
-    	Localhost:8090
+    	Localhost:8090/cliente
     - Restaurante
-    	Localhost:8092
+    	Localhost:8092/restaurante
     - Repartidor
-       	Localhost:8091
+       	Localhost:8091/repartidor
