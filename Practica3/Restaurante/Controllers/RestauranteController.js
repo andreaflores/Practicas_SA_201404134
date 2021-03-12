@@ -4,7 +4,6 @@ function pedidoCliente(req, res) {
     dbconnection.query(`UPDATE pedidos set estadoRestaurante = 'En proceso' where pedidos.cliente = 'clienteNode1';`,
         function (error, results, fields) {
             if (error) {
-                console.log(error);
                 res.json({ mensaje: 'existio un error' });
             } else {
                 res.json({ data: 'Pedido recibido por el restaurante' });
@@ -16,7 +15,6 @@ function pedidoListo(req, res) {
     dbconnection.query(`UPDATE pedidos set estadoRepartidor = 'Entregado al repartidor' where pedidos.cliente = 'clienteNode1';`,
         function (error, results, fields) {
             if (error) {
-                console.log(error);
                 res.json({ mensaje: 'existio un error' });
             } else {
                 res.json({ data: 'Pedido entregado al repartidor' });
@@ -26,7 +24,6 @@ function pedidoListo(req, res) {
         dbconnection.query(`UPDATE pedidos set estadoRestaurante = 'Terminado' where pedidos.cliente = 'clienteNode1';`,
         function (error, results, fields) {
             if (error) {
-                console.log(error);
                 res.json({ mensaje: 'existio un error' });
             } else {
                 res.json({ data: 'Pedido entregado al repartidor' });
