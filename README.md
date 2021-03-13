@@ -10,6 +10,14 @@ Para ejecutar las pruebas se debe estar en la carpeta de Cliente y en la termina
 Automáticamente se ejecutarán las pruebas y el resultado se muestra en consola.
 En la documentación se muestra a detalle el funcionamiento.
 
+Sonarqube
+El link del video de demostración es el siguiente
+    https://youtu.be/deSmrO-xfR0
+En la documentación se muestran los arhcivos utilizador y los resultados del análisis.
+Link de Sonarqube donde se muestran los resultados del análisis
+
+    http://localhost:9000/dashboard?id=node-test-app
+
 ## Practica 4
 El serivicio ESB se encuentra en la carpeta con el mismo nombre.
 Dentro se encuentra un archivo index.js donde se realizan todas las llamadas a los otros serivicios.
