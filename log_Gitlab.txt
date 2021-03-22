@@ -1,0 +1,132 @@
+[0KRunning with gitlab-runner 13.9.0-rc2 (69c049fd)
+[0;m[0K  on docker-auto-scale 72989761
+[0;m[0K  feature flags: FF_GITLAB_REGISTRY_HELPER_IMAGE:true
+[0;msection_start:1616383712:resolve_secrets
+[0K[0K[36;1mResolving secrets[0;m
+[0;msection_end:1616383712:resolve_secrets
+[0Ksection_start:1616383712:prepare_executor
+[0K[0K[36;1mPreparing the "docker+machine" executor[0;m
+[0;m[0KUsing Docker executor with image node:latest ...
+[0;m[0KPulling docker image node:latest ...
+[0;m[0KUsing docker image sha256:4d032a7b0ca957c80de8a90eb7e22606904ae9f7a902a3ee8cb962d6393db20e for node:latest with digest node@sha256:40164a44cf9481a36334ae1cb13ee01aee08acdf7008a726750b447f5c38b490 ...
+[0;msection_end:1616383744:prepare_executor
+[0Ksection_start:1616383744:prepare_script
+[0K[0K[36;1mPreparing environment[0;m
+[0;mRunning on runner-72989761-project-25319175-concurrent-0 via runner-72989761-srm-1616383024-74b4afbb...
+section_end:1616383747:prepare_script
+[0Ksection_start:1616383747:get_sources
+[0K[0K[36;1mGetting source from Git repository[0;m
+[0;m[32;1m$ eval "$CI_PRE_CLONE_SCRIPT"[0;m
+[32;1mFetching changes with git depth set to 50...[0;m
+Initialized empty Git repository in /builds/andreelopez/sa_practica7_201404134/.git/
+[32;1mCreated fresh repository.[0;m
+[32;1mChecking out 936f3c9f as master...[0;m
+
+[32;1mSkipping Git submodules setup[0;m
+section_end:1616383765:get_sources
+[0Ksection_start:1616383765:step_script
+[0K[0K[36;1mExecuting "step_script" stage of the job script[0;m
+[0;m[0KUsing docker image sha256:4d032a7b0ca957c80de8a90eb7e22606904ae9f7a902a3ee8cb962d6393db20e for node:latest with digest node@sha256:40164a44cf9481a36334ae1cb13ee01aee08acdf7008a726750b447f5c38b490 ...
+[0;m[32;1m$ npm i[0;m
+
+added 220 packages, and audited 221 packages in 7s
+
+1 package is looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+[32;1m$ npm install mocha[0;m
+
+changed 1 package, and audited 221 packages in 1s
+
+2 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+[32;1m$ npm install chai[0;m
+
+up to date, audited 221 packages in 900ms
+
+2 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+[32;1m$ npm run test[0;m
+
+> practica3@1.0.0 test
+> mocha ./Cliente/test --timeout 60000 --exit
+
+Cliente corriendo en el puerto:8090
+Error de connection: Error: connect ECONNREFUSED 127.0.0.1:3306
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1137:16)
+    --------------------
+    at Protocol._enqueue (/builds/andreelopez/sa_practica7_201404134/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+    at Protocol.handshake (/builds/andreelopez/sa_practica7_201404134/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+    at Connection.connect (/builds/andreelopez/sa_practica7_201404134/node_modules/mysql/lib/Connection.js:116:18)
+    at Object.<anonymous> (/builds/andreelopez/sa_practica7_201404134/Cliente/DB/Connection.js:15:12)
+    at Module._compile (node:internal/modules/cjs/loader:1092:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1121:10)
+    at Module.load (node:internal/modules/cjs/loader:972:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:813:14)
+    at Module.require (node:internal/modules/cjs/loader:996:19)
+    at require (node:internal/modules/cjs/helpers:92:18)
+    at Object.<anonymous> (/builds/andreelopez/sa_practica7_201404134/Cliente/Controllers/ClienteController.js:1:22)
+    at Module._compile (node:internal/modules/cjs/loader:1092:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1121:10)
+    at Module.load (node:internal/modules/cjs/loader:972:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:813:14)
+    at Module.require (node:internal/modules/cjs/loader:996:19)
+    at require (node:internal/modules/cjs/helpers:92:18)
+    at Object.<anonymous> (/builds/andreelopez/sa_practica7_201404134/Cliente/Routes/ClienteRoutes.js:3:20)
+    at Module._compile (node:internal/modules/cjs/loader:1092:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1121:10)
+    at Module.load (node:internal/modules/cjs/loader:972:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:813:14)
+    at Module.require (node:internal/modules/cjs/loader:996:19)
+    at require (node:internal/modules/cjs/helpers:92:18)
+    at Object.<anonymous> (/builds/andreelopez/sa_practica7_201404134/Cliente/index.js:18:21)
+    at Module._compile (node:internal/modules/cjs/loader:1092:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1121:10)
+    at Module.load (node:internal/modules/cjs/loader:972:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:813:14)
+    at Module.require (node:internal/modules/cjs/loader:996:19)
+    at require (node:internal/modules/cjs/helpers:92:18)
+    at Object.<anonymous> (/builds/andreelopez/sa_practica7_201404134/Cliente/test/test.js:1:13)
+    at Module._compile (node:internal/modules/cjs/loader:1092:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1121:10)
+    at Module.load (node:internal/modules/cjs/loader:972:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:813:14)
+    at Module.require (node:internal/modules/cjs/loader:996:19)
+    at require (node:internal/modules/cjs/helpers:92:18)
+    at Object.exports.requireOrImport (/builds/andreelopez/sa_practica7_201404134/node_modules/mocha/lib/esm-utils.js:42:12)
+    at Object.exports.loadFilesAsync (/builds/andreelopez/sa_practica7_201404134/node_modules/mocha/lib/esm-utils.js:55:34)
+    at Mocha.loadFilesAsync (/builds/andreelopez/sa_practica7_201404134/node_modules/mocha/lib/mocha.js:473:19)
+    at singleRun (/builds/andreelopez/sa_practica7_201404134/node_modules/mocha/lib/cli/run-helpers.js:125:15)
+    at exports.runMocha (/builds/andreelopez/sa_practica7_201404134/node_modules/mocha/lib/cli/run-helpers.js:190:10)
+    at Object.exports.handler (/builds/andreelopez/sa_practica7_201404134/node_modules/mocha/lib/cli/run.js:362:11)
+    at /builds/andreelopez/sa_practica7_201404134/node_modules/yargs/build/index.cjs:443:71
+
+
+  Cliente
+[0mGET /cliente/pedido [32m200[0m 3.563 ms - 31[0m
+    âœ“ Deberia crear el pedido del cliente
+[0mGET /cliente/estadoRestaurante [32m200[0m 0.854 ms - 31[0m
+    âœ“ Deberia obtener el estado del pedido en el restaurante
+[0mGET /cliente/estadoRepartidor [32m200[0m 0.652 ms - 31[0m
+    âœ“ Deberia obtener el estado del pedido con el repartidor
+
+
+  3 passing (46ms)
+
+section_end:1616383776:step_script
+[0Ksection_start:1616383776:after_script
+[0K[0K[36;1mRunning after_script[0;m
+[0;m[32;1mRunning after script...[0;m
+[32;1m$ echo "Pruebas Unitarias finalizadas"[0;m
+Pruebas Unitarias finalizadas
+section_end:1616383777:after_script
+[0Ksection_start:1616383777:cleanup_file_variables
+[0K[0K[36;1mCleaning up file based variables[0;m
+[0;msection_end:1616383778:cleanup_file_variables
+[0K[32;1mJob succeeded
+[0;m
