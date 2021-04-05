@@ -1,8 +1,8 @@
 var mysql = require('mysql');
-const host = '127.0.0.1';
+const host = '192.168.0.12';
 const db = 'practica8';
 const user = 'root';
-const password = 'secret';
+const password = '';
 
 var connection = mysql.createConnection({
     host: host,

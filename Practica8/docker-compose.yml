@@ -1,0 +1,22 @@
+version: '3.7'
+
+  practica8:
+    container_name: usuariointerno
+    image: andreaflores/usuariointerno:latest
+    build:
+      dockerfile: Dockerfile
+      context: ./Cliente
+    ports:
+      - '8080:8080'
+  
+  mysql-db:
+    image: mysql:latest
+    restart: always
+    environment:
+      MYSQL_DATABASE: 'practica8'
+      MYSQL_USER: 'root'
+      MYSQL_ROOT_PASSWORD: 'secret'
+    ports:
+      - '3306:3306'
+    expose:
+      - '3306'
