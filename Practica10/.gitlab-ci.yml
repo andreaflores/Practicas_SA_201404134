@@ -1,0 +1,44 @@
+stages:
+  - Build
+  - Tests
+  - Deploy
+
+BuildAll:
+  stage: Build
+  script:
+    - docker-compose up --build -d
+    - echo "Builds finalizados"
+  tags:
+    - "RunnerBuild"
+  only:
+    - master
+
+TestCliente:
+  stage: Tests
+  before_script:
+    - cd Cliente/
+    - npm install
+  script:
+    - npm run test
+  after_script:
+    - echo "Pruebas de Autenticacion finalizadas"
+  tags:
+    - "RunnerPruebas"
+  only:
+    - master
+
+Deployment:
+  stage: Deploy
+  before_script:
+    - docker-compose stop
+    - docker-compose rm -f
+  script:
+    - echo URL_SERVICIOS=http://34.68.49.152
+    - docker-compose pull
+    - docker-compose up -d
+  after_script:
+    - echo "Deployment levantado"
+  tags:
+    - "RunnerDeploy"
+  only:
+    - master

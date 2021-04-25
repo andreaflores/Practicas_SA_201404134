@@ -1,0 +1,356 @@
+2021.03.12 18:08:33 INFO  es[][o.e.n.Node] version[7.10.2], pid[8472], build[unknown/unknown/747e1cc71def077253878a59143c1f785afa92b9/2021-01-13T00:42:12.435326Z], OS[Windows 10/10.0/amd64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/11.0.10/11.0.10+8-LTS-162]
+2021.03.12 18:08:33 INFO  es[][o.e.n.Node] JVM home [C:\Program Files\Java\jdk-11.0.10]
+2021.03.12 18:08:33 INFO  es[][o.e.n.Node] JVM arguments [-XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -Djava.io.tmpdir=C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\temp, -XX:ErrorFile=../logs/es_hs_err_pid%p.log, -Des.networkaddress.cache.ttl=60, -Des.networkaddress.cache.negative.ttl=10, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dio.netty.allocator.numDirectArenas=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Djava.locale.providers=COMPAT, -Xmx512m, -Xms512m, -XX:MaxDirectMemorySize=256m, -XX:+HeapDumpOnOutOfMemoryError, -Delasticsearch, -Des.path.home=C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\elasticsearch, -Des.path.conf=C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\temp\conf\es]
+2021.03.12 18:08:37 INFO  es[][o.e.p.PluginsService] loaded module [analysis-common]
+2021.03.12 18:08:37 INFO  es[][o.e.p.PluginsService] loaded module [lang-painless]
+2021.03.12 18:08:37 INFO  es[][o.e.p.PluginsService] loaded module [parent-join]
+2021.03.12 18:08:37 INFO  es[][o.e.p.PluginsService] loaded module [percolator]
+2021.03.12 18:08:37 INFO  es[][o.e.p.PluginsService] loaded module [transport-netty4]
+2021.03.12 18:08:37 INFO  es[][o.e.p.PluginsService] no plugins loaded
+2021.03.12 18:08:37 INFO  es[][o.e.e.NodeEnvironment] using [1] data paths, mounts [[(C:)]], net usable_space [267.4gb], net total_space [446gb], types [NTFS]
+2021.03.12 18:08:37 INFO  es[][o.e.e.NodeEnvironment] heap size [494.9mb], compressed ordinary object pointers [true]
+2021.03.12 18:08:39 INFO  es[][o.e.n.Node] node name [sonarqube], node ID [1oY7_f72SLCoHnQrOo5juA], cluster name [sonarqube], roles [master, remote_cluster_client, data, ingest]
+2021.03.12 18:08:56 INFO  es[][o.e.t.NettyAllocator] creating NettyAllocator with the following configs: [name=unpooled, suggested_max_allocation_size=1mb, factors={es.unsafe.use_unpooled_allocator=null, g1gc_enabled=false, g1gc_region_size=0b, heap_size=494.9mb}]
+2021.03.12 18:08:56 INFO  es[][o.e.d.DiscoveryModule] using discovery type [zen] and seed hosts providers [settings]
+2021.03.12 18:08:58 WARN  es[][o.e.g.DanglingIndicesState] gateway.auto_import_dangling_indices is disabled, dangling indices will not be automatically detected or imported and must be managed manually
+2021.03.12 18:08:59 INFO  es[][o.e.n.Node] initialized
+2021.03.12 18:08:59 INFO  es[][o.e.n.Node] starting ...
+2021.03.12 18:09:02 INFO  es[][o.e.t.TransportService] publish_address {127.0.0.1:2742}, bound_addresses {127.0.0.1:2742}
+2021.03.12 18:09:03 INFO  es[][o.e.c.c.Coordinator] setting initial configuration to VotingConfiguration{1oY7_f72SLCoHnQrOo5juA}
+2021.03.12 18:09:03 INFO  es[][o.e.c.s.MasterService] elected-as-master ([1] nodes joined)[{sonarqube}{1oY7_f72SLCoHnQrOo5juA}{OoL4MfDlSkO7omwc2iBYvA}{127.0.0.1}{127.0.0.1:2742}{dimr}{rack_id=sonarqube} elect leader, _BECOME_MASTER_TASK_, _FINISH_ELECTION_], term: 1, version: 1, delta: master node changed {previous [], current [{sonarqube}{1oY7_f72SLCoHnQrOo5juA}{OoL4MfDlSkO7omwc2iBYvA}{127.0.0.1}{127.0.0.1:2742}{dimr}{rack_id=sonarqube}]}
+2021.03.12 18:09:04 INFO  es[][o.e.c.c.CoordinationState] cluster UUID set to [aXU-KU4dRvmJlchn1Uq2-g]
+2021.03.12 18:09:04 INFO  es[][o.e.c.s.ClusterApplierService] master node changed {previous [], current [{sonarqube}{1oY7_f72SLCoHnQrOo5juA}{OoL4MfDlSkO7omwc2iBYvA}{127.0.0.1}{127.0.0.1:2742}{dimr}{rack_id=sonarqube}]}, term: 1, version: 1, reason: Publication{term=1, version=1}
+2021.03.12 18:09:04 INFO  es[][o.e.h.AbstractHttpServerTransport] publish_address {127.0.0.1:9001}, bound_addresses {127.0.0.1:9001}
+2021.03.12 18:09:04 INFO  es[][o.e.n.Node] started
+2021.03.12 18:09:04 INFO  es[][o.e.g.GatewayService] recovered [0] indices into cluster_state
+2021.03.12 18:09:59 INFO  es[][o.e.c.m.MetadataCreateIndexService] [metadatas] creating index, cause [api], templates [], shards [1]/[0]
+2021.03.12 18:10:00 INFO  es[][o.e.c.r.a.AllocationService] Cluster health status changed from [YELLOW] to [GREEN] (reason: [shards started [[metadatas][0]]]).
+2021.03.12 18:10:01 INFO  es[][o.e.c.m.MetadataMappingService] [metadatas/9GQOMw70S5-GoCUUNgVfKA] create_mapping [metadata]
+2021.03.12 18:10:03 INFO  es[][o.e.c.m.MetadataCreateIndexService] [components] creating index, cause [api], templates [], shards [5]/[0]
+2021.03.12 18:10:06 INFO  es[][o.e.c.r.a.AllocationService] Cluster health status changed from [YELLOW] to [GREEN] (reason: [shards started [[components][4]]]).
+2021.03.12 18:10:06 INFO  es[][o.e.c.m.MetadataMappingService] [components/MmNbmOm2S56vzjyQ4h-1bw] create_mapping [auth]
+2021.03.12 18:10:07 INFO  es[][o.e.c.m.MetadataCreateIndexService] [projectmeasures] creating index, cause [api], templates [], shards [5]/[0]
+2021.03.12 18:10:09 INFO  es[][o.e.c.r.a.AllocationService] Cluster health status changed from [YELLOW] to [GREEN] (reason: [shards started [[projectmeasures][4]]]).
+2021.03.12 18:10:09 INFO  es[][o.e.c.m.MetadataMappingService] [projectmeasures/CjKQJz3FRXG9jZ3K0PFWGg] create_mapping [auth]
+2021.03.12 18:10:10 INFO  es[][o.e.c.m.MetadataCreateIndexService] [rules] creating index, cause [api], templates [], shards [2]/[0]
+2021.03.12 18:10:11 INFO  es[][o.e.c.r.a.AllocationService] Cluster health status changed from [YELLOW] to [GREEN] (reason: [shards started [[rules][0]]]).
+2021.03.12 18:10:12 INFO  es[][o.e.c.m.MetadataMappingService] [rules/U7BhQdhuQlaiH15xrgdUfA] create_mapping [rule]
+2021.03.12 18:10:13 INFO  es[][o.e.c.m.MetadataCreateIndexService] [issues] creating index, cause [api], templates [], shards [5]/[0]
+2021.03.12 18:10:15 INFO  es[][o.e.c.r.a.AllocationService] Cluster health status changed from [YELLOW] to [GREEN] (reason: [shards started [[issues][4]]]).
+2021.03.12 18:10:15 INFO  es[][o.e.c.m.MetadataMappingService] [issues/Mg8lvgtkQCCM4VflKp202Q] create_mapping [auth]
+2021.03.12 18:10:15 INFO  es[][o.e.c.m.MetadataCreateIndexService] [users] creating index, cause [api], templates [], shards [1]/[0]
+2021.03.12 18:10:16 INFO  es[][o.e.c.r.a.AllocationService] Cluster health status changed from [YELLOW] to [GREEN] (reason: [shards started [[users][0]]]).
+2021.03.12 18:10:16 INFO  es[][o.e.c.m.MetadataMappingService] [users/k9SI3UzbRgyQSvOSuJ5vWw] create_mapping [user]
+2021.03.12 18:10:17 INFO  es[][o.e.c.m.MetadataCreateIndexService] [views] creating index, cause [api], templates [], shards [5]/[0]
+2021.03.12 18:10:19 INFO  es[][o.e.c.r.a.AllocationService] Cluster health status changed from [YELLOW] to [GREEN] (reason: [shards started [[views][4]]]).
+2021.03.12 18:10:20 INFO  es[][o.e.c.m.MetadataMappingService] [views/Nr-e0e_JSrSoHkGhukw0IA] create_mapping [view]
+2021.03.12 18:12:23 INFO  es[][o.e.c.s.IndexScopedSettings] updating [index.refresh_interval] from [30s] to [-1]
+2021.03.12 18:12:24 INFO  es[][o.e.c.s.IndexScopedSettings] updating [index.refresh_interval] from [30s] to [-1]
+2021.03.12 18:12:26 INFO  es[][o.e.c.s.IndexScopedSettings] updating [index.refresh_interval] from [-1] to [30s]
+2021.03.12 18:12:26 INFO  es[][o.e.c.s.IndexScopedSettings] updating [index.refresh_interval] from [-1] to [30s]
+2021.03.12 18:12:27 INFO  es[][o.e.c.s.IndexScopedSettings] updating [index.refresh_interval] from [30s] to [-1]
+2021.03.12 18:12:27 INFO  es[][o.e.c.s.IndexScopedSettings] updating [index.refresh_interval] from [30s] to [-1]
+2021.03.12 18:12:27 INFO  es[][o.e.c.s.IndexScopedSettings] updating [index.refresh_interval] from [-1] to [30s]
+2021.03.12 18:12:27 INFO  es[][o.e.c.s.IndexScopedSettings] updating [index.refresh_interval] from [-1] to [30s]
+2021.03.12 21:52:56 INFO  es[][o.e.n.Node] version[7.10.2], pid[10528], build[unknown/unknown/747e1cc71def077253878a59143c1f785afa92b9/2021-01-13T00:42:12.435326Z], OS[Windows 10/10.0/amd64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/11.0.10/11.0.10+8-LTS-162]
+2021.03.12 21:52:56 INFO  es[][o.e.n.Node] JVM home [C:\Program Files\Java\jdk-11.0.10]
+2021.03.12 21:52:56 INFO  es[][o.e.n.Node] JVM arguments [-XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -Djava.io.tmpdir=C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\temp, -XX:ErrorFile=../logs/es_hs_err_pid%p.log, -Des.networkaddress.cache.ttl=60, -Des.networkaddress.cache.negative.ttl=10, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dio.netty.allocator.numDirectArenas=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Djava.locale.providers=COMPAT, -Xmx512m, -Xms512m, -XX:MaxDirectMemorySize=256m, -XX:+HeapDumpOnOutOfMemoryError, -Delasticsearch, -Des.path.home=C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\elasticsearch, -Des.path.conf=C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\temp\conf\es]
+2021.03.12 21:53:04 INFO  es[][o.e.p.PluginsService] loaded module [analysis-common]
+2021.03.12 21:53:04 INFO  es[][o.e.p.PluginsService] loaded module [lang-painless]
+2021.03.12 21:53:04 INFO  es[][o.e.p.PluginsService] loaded module [parent-join]
+2021.03.12 21:53:04 INFO  es[][o.e.p.PluginsService] loaded module [percolator]
+2021.03.12 21:53:04 INFO  es[][o.e.p.PluginsService] loaded module [transport-netty4]
+2021.03.12 21:53:04 INFO  es[][o.e.p.PluginsService] no plugins loaded
+2021.03.12 21:53:05 ERROR es[][o.e.b.Bootstrap] Exception
+java.lang.IllegalStateException: failed to obtain node locks, tried [[C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\data\es7]] with lock id [0]; maybe these locations are not writable or multiple nodes were started without increasing [node.max_local_storage_nodes] (was [1])?
+	at org.elasticsearch.env.NodeEnvironment.<init>(NodeEnvironment.java:302) ~[elasticsearch-7.10.2.jar:7.10.2]
+	at org.elasticsearch.node.Node.<init>(Node.java:362) ~[elasticsearch-7.10.2.jar:7.10.2]
+	at org.elasticsearch.node.Node.<init>(Node.java:289) ~[elasticsearch-7.10.2.jar:7.10.2]
+	at org.elasticsearch.bootstrap.Bootstrap$5.<init>(Bootstrap.java:227) ~[elasticsearch-7.10.2.jar:7.10.2]
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:227) ~[elasticsearch-7.10.2.jar:7.10.2]
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:393) [elasticsearch-7.10.2.jar:7.10.2]
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:170) [elasticsearch-7.10.2.jar:7.10.2]
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:161) [elasticsearch-7.10.2.jar:7.10.2]
+	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:86) [elasticsearch-7.10.2.jar:7.10.2]
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:127) [elasticsearch-cli-7.10.2.jar:7.10.2]
+	at org.elasticsearch.cli.Command.main(Command.java:90) [elasticsearch-cli-7.10.2.jar:7.10.2]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:126) [elasticsearch-7.10.2.jar:7.10.2]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:92) [elasticsearch-7.10.2.jar:7.10.2]
+2021.03.12 21:53:05 ERROR es[][o.e.b.ElasticsearchUncaughtExceptionHandler] uncaught exception in thread [main]
+org.elasticsearch.bootstrap.StartupException: java.lang.IllegalStateException: failed to obtain node locks, tried [[C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\data\es7]] with lock id [0]; maybe these locations are not writable or multiple nodes were started without increasing [node.max_local_storage_nodes] (was [1])?
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:174) ~[elasticsearch-7.10.2.jar:7.10.2]
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:161) ~[elasticsearch-7.10.2.jar:7.10.2]
+	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:86) ~[elasticsearch-7.10.2.jar:7.10.2]
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:127) ~[elasticsearch-cli-7.10.2.jar:7.10.2]
+	at org.elasticsearch.cli.Command.main(Command.java:90) ~[elasticsearch-cli-7.10.2.jar:7.10.2]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:126) ~[elasticsearch-7.10.2.jar:7.10.2]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:92) ~[elasticsearch-7.10.2.jar:7.10.2]
+Caused by: java.lang.IllegalStateException: failed to obtain node locks, tried [[C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\data\es7]] with lock id [0]; maybe these locations are not writable or multiple nodes were started without increasing [node.max_local_storage_nodes] (was [1])?
+	at org.elasticsearch.env.NodeEnvironment.<init>(NodeEnvironment.java:302) ~[elasticsearch-7.10.2.jar:7.10.2]
+	at org.elasticsearch.node.Node.<init>(Node.java:362) ~[elasticsearch-7.10.2.jar:7.10.2]
+	at org.elasticsearch.node.Node.<init>(Node.java:289) ~[elasticsearch-7.10.2.jar:7.10.2]
+	at org.elasticsearch.bootstrap.Bootstrap$5.<init>(Bootstrap.java:227) ~[elasticsearch-7.10.2.jar:7.10.2]
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:227) ~[elasticsearch-7.10.2.jar:7.10.2]
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:393) ~[elasticsearch-7.10.2.jar:7.10.2]
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:170) ~[elasticsearch-7.10.2.jar:7.10.2]
+	... 6 more
+2021.03.12 21:54:14 INFO  es[][o.e.n.Node] version[7.10.2], pid[16092], build[unknown/unknown/747e1cc71def077253878a59143c1f785afa92b9/2021-01-13T00:42:12.435326Z], OS[Windows 10/10.0/amd64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/11.0.10/11.0.10+8-LTS-162]
+2021.03.12 21:54:14 INFO  es[][o.e.n.Node] JVM home [C:\Program Files\Java\jdk-11.0.10]
+2021.03.12 21:54:14 INFO  es[][o.e.n.Node] JVM arguments [-XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -Djava.io.tmpdir=C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\temp, -XX:ErrorFile=../logs/es_hs_err_pid%p.log, -Des.networkaddress.cache.ttl=60, -Des.networkaddress.cache.negative.ttl=10, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dio.netty.allocator.numDirectArenas=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Djava.locale.providers=COMPAT, -Xmx512m, -Xms512m, -XX:MaxDirectMemorySize=256m, -XX:+HeapDumpOnOutOfMemoryError, -Delasticsearch, -Des.path.home=C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\elasticsearch, -Des.path.conf=C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\temp\conf\es]
+2021.03.12 21:54:20 INFO  es[][o.e.p.PluginsService] loaded module [analysis-common]
+2021.03.12 21:54:20 INFO  es[][o.e.p.PluginsService] loaded module [lang-painless]
+2021.03.12 21:54:20 INFO  es[][o.e.p.PluginsService] loaded module [parent-join]
+2021.03.12 21:54:20 INFO  es[][o.e.p.PluginsService] loaded module [percolator]
+2021.03.12 21:54:20 INFO  es[][o.e.p.PluginsService] loaded module [transport-netty4]
+2021.03.12 21:54:20 INFO  es[][o.e.p.PluginsService] no plugins loaded
+2021.03.12 21:54:20 ERROR es[][o.e.b.Bootstrap] Exception
+java.lang.IllegalStateException: failed to obtain node locks, tried [[C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\data\es7]] with lock id [0]; maybe these locations are not writable or multiple nodes were started without increasing [node.max_local_storage_nodes] (was [1])?
+	at org.elasticsearch.env.NodeEnvironment.<init>(NodeEnvironment.java:302) ~[elasticsearch-7.10.2.jar:7.10.2]
+	at org.elasticsearch.node.Node.<init>(Node.java:362) ~[elasticsearch-7.10.2.jar:7.10.2]
+	at org.elasticsearch.node.Node.<init>(Node.java:289) ~[elasticsearch-7.10.2.jar:7.10.2]
+	at org.elasticsearch.bootstrap.Bootstrap$5.<init>(Bootstrap.java:227) ~[elasticsearch-7.10.2.jar:7.10.2]
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:227) ~[elasticsearch-7.10.2.jar:7.10.2]
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:393) [elasticsearch-7.10.2.jar:7.10.2]
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:170) [elasticsearch-7.10.2.jar:7.10.2]
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:161) [elasticsearch-7.10.2.jar:7.10.2]
+	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:86) [elasticsearch-7.10.2.jar:7.10.2]
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:127) [elasticsearch-cli-7.10.2.jar:7.10.2]
+	at org.elasticsearch.cli.Command.main(Command.java:90) [elasticsearch-cli-7.10.2.jar:7.10.2]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:126) [elasticsearch-7.10.2.jar:7.10.2]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:92) [elasticsearch-7.10.2.jar:7.10.2]
+2021.03.12 21:54:20 ERROR es[][o.e.b.ElasticsearchUncaughtExceptionHandler] uncaught exception in thread [main]
+org.elasticsearch.bootstrap.StartupException: java.lang.IllegalStateException: failed to obtain node locks, tried [[C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\data\es7]] with lock id [0]; maybe these locations are not writable or multiple nodes were started without increasing [node.max_local_storage_nodes] (was [1])?
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:174) ~[elasticsearch-7.10.2.jar:7.10.2]
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:161) ~[elasticsearch-7.10.2.jar:7.10.2]
+	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:86) ~[elasticsearch-7.10.2.jar:7.10.2]
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:127) ~[elasticsearch-cli-7.10.2.jar:7.10.2]
+	at org.elasticsearch.cli.Command.main(Command.java:90) ~[elasticsearch-cli-7.10.2.jar:7.10.2]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:126) ~[elasticsearch-7.10.2.jar:7.10.2]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:92) ~[elasticsearch-7.10.2.jar:7.10.2]
+Caused by: java.lang.IllegalStateException: failed to obtain node locks, tried [[C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\data\es7]] with lock id [0]; maybe these locations are not writable or multiple nodes were started without increasing [node.max_local_storage_nodes] (was [1])?
+	at org.elasticsearch.env.NodeEnvironment.<init>(NodeEnvironment.java:302) ~[elasticsearch-7.10.2.jar:7.10.2]
+	at org.elasticsearch.node.Node.<init>(Node.java:362) ~[elasticsearch-7.10.2.jar:7.10.2]
+	at org.elasticsearch.node.Node.<init>(Node.java:289) ~[elasticsearch-7.10.2.jar:7.10.2]
+	at org.elasticsearch.bootstrap.Bootstrap$5.<init>(Bootstrap.java:227) ~[elasticsearch-7.10.2.jar:7.10.2]
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:227) ~[elasticsearch-7.10.2.jar:7.10.2]
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:393) ~[elasticsearch-7.10.2.jar:7.10.2]
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:170) ~[elasticsearch-7.10.2.jar:7.10.2]
+	... 6 more
+2021.03.12 21:58:43 INFO  es[][o.e.n.Node] version[7.10.2], pid[10884], build[unknown/unknown/747e1cc71def077253878a59143c1f785afa92b9/2021-01-13T00:42:12.435326Z], OS[Windows 10/10.0/amd64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/11.0.10/11.0.10+8-LTS-162]
+2021.03.12 21:58:43 INFO  es[][o.e.n.Node] JVM home [C:\Program Files\Java\jdk-11.0.10]
+2021.03.12 21:58:43 INFO  es[][o.e.n.Node] JVM arguments [-XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -Djava.io.tmpdir=C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\temp, -XX:ErrorFile=../logs/es_hs_err_pid%p.log, -Des.networkaddress.cache.ttl=60, -Des.networkaddress.cache.negative.ttl=10, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dio.netty.allocator.numDirectArenas=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Djava.locale.providers=COMPAT, -Xmx512m, -Xms512m, -XX:MaxDirectMemorySize=256m, -XX:+HeapDumpOnOutOfMemoryError, -Delasticsearch, -Des.path.home=C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\elasticsearch, -Des.path.conf=C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\temp\conf\es]
+2021.03.12 21:58:50 INFO  es[][o.e.p.PluginsService] loaded module [analysis-common]
+2021.03.12 21:58:50 INFO  es[][o.e.p.PluginsService] loaded module [lang-painless]
+2021.03.12 21:58:50 INFO  es[][o.e.p.PluginsService] loaded module [parent-join]
+2021.03.12 21:58:50 INFO  es[][o.e.p.PluginsService] loaded module [percolator]
+2021.03.12 21:58:50 INFO  es[][o.e.p.PluginsService] loaded module [transport-netty4]
+2021.03.12 21:58:50 INFO  es[][o.e.p.PluginsService] no plugins loaded
+2021.03.12 21:58:50 ERROR es[][o.e.b.Bootstrap] Exception
+java.lang.IllegalStateException: failed to obtain node locks, tried [[C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\data\es7]] with lock id [0]; maybe these locations are not writable or multiple nodes were started without increasing [node.max_local_storage_nodes] (was [1])?
+	at org.elasticsearch.env.NodeEnvironment.<init>(NodeEnvironment.java:302) ~[elasticsearch-7.10.2.jar:7.10.2]
+	at org.elasticsearch.node.Node.<init>(Node.java:362) ~[elasticsearch-7.10.2.jar:7.10.2]
+	at org.elasticsearch.node.Node.<init>(Node.java:289) ~[elasticsearch-7.10.2.jar:7.10.2]
+	at org.elasticsearch.bootstrap.Bootstrap$5.<init>(Bootstrap.java:227) ~[elasticsearch-7.10.2.jar:7.10.2]
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:227) ~[elasticsearch-7.10.2.jar:7.10.2]
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:393) [elasticsearch-7.10.2.jar:7.10.2]
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:170) [elasticsearch-7.10.2.jar:7.10.2]
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:161) [elasticsearch-7.10.2.jar:7.10.2]
+	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:86) [elasticsearch-7.10.2.jar:7.10.2]
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:127) [elasticsearch-cli-7.10.2.jar:7.10.2]
+	at org.elasticsearch.cli.Command.main(Command.java:90) [elasticsearch-cli-7.10.2.jar:7.10.2]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:126) [elasticsearch-7.10.2.jar:7.10.2]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:92) [elasticsearch-7.10.2.jar:7.10.2]
+2021.03.12 21:58:50 ERROR es[][o.e.b.ElasticsearchUncaughtExceptionHandler] uncaught exception in thread [main]
+org.elasticsearch.bootstrap.StartupException: java.lang.IllegalStateException: failed to obtain node locks, tried [[C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\data\es7]] with lock id [0]; maybe these locations are not writable or multiple nodes were started without increasing [node.max_local_storage_nodes] (was [1])?
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:174) ~[elasticsearch-7.10.2.jar:7.10.2]
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:161) ~[elasticsearch-7.10.2.jar:7.10.2]
+	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:86) ~[elasticsearch-7.10.2.jar:7.10.2]
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:127) ~[elasticsearch-cli-7.10.2.jar:7.10.2]
+	at org.elasticsearch.cli.Command.main(Command.java:90) ~[elasticsearch-cli-7.10.2.jar:7.10.2]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:126) ~[elasticsearch-7.10.2.jar:7.10.2]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:92) ~[elasticsearch-7.10.2.jar:7.10.2]
+Caused by: java.lang.IllegalStateException: failed to obtain node locks, tried [[C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\data\es7]] with lock id [0]; maybe these locations are not writable or multiple nodes were started without increasing [node.max_local_storage_nodes] (was [1])?
+	at org.elasticsearch.env.NodeEnvironment.<init>(NodeEnvironment.java:302) ~[elasticsearch-7.10.2.jar:7.10.2]
+	at org.elasticsearch.node.Node.<init>(Node.java:362) ~[elasticsearch-7.10.2.jar:7.10.2]
+	at org.elasticsearch.node.Node.<init>(Node.java:289) ~[elasticsearch-7.10.2.jar:7.10.2]
+	at org.elasticsearch.bootstrap.Bootstrap$5.<init>(Bootstrap.java:227) ~[elasticsearch-7.10.2.jar:7.10.2]
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:227) ~[elasticsearch-7.10.2.jar:7.10.2]
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:393) ~[elasticsearch-7.10.2.jar:7.10.2]
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:170) ~[elasticsearch-7.10.2.jar:7.10.2]
+	... 6 more
+2021.03.12 22:00:25 INFO  es[][o.e.n.Node] version[7.10.2], pid[7996], build[unknown/unknown/747e1cc71def077253878a59143c1f785afa92b9/2021-01-13T00:42:12.435326Z], OS[Windows 10/10.0/amd64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/11.0.10/11.0.10+8-LTS-162]
+2021.03.12 22:00:25 INFO  es[][o.e.n.Node] JVM home [C:\Program Files\Java\jdk-11.0.10]
+2021.03.12 22:00:25 INFO  es[][o.e.n.Node] JVM arguments [-XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -Djava.io.tmpdir=C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\temp, -XX:ErrorFile=../logs/es_hs_err_pid%p.log, -Des.networkaddress.cache.ttl=60, -Des.networkaddress.cache.negative.ttl=10, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dio.netty.allocator.numDirectArenas=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Djava.locale.providers=COMPAT, -Xmx512m, -Xms512m, -XX:MaxDirectMemorySize=256m, -XX:+HeapDumpOnOutOfMemoryError, -Delasticsearch, -Des.path.home=C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\elasticsearch, -Des.path.conf=C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\temp\conf\es]
+2021.03.12 22:00:32 INFO  es[][o.e.p.PluginsService] loaded module [analysis-common]
+2021.03.12 22:00:32 INFO  es[][o.e.p.PluginsService] loaded module [lang-painless]
+2021.03.12 22:00:32 INFO  es[][o.e.p.PluginsService] loaded module [parent-join]
+2021.03.12 22:00:32 INFO  es[][o.e.p.PluginsService] loaded module [percolator]
+2021.03.12 22:00:32 INFO  es[][o.e.p.PluginsService] loaded module [transport-netty4]
+2021.03.12 22:00:32 INFO  es[][o.e.p.PluginsService] no plugins loaded
+2021.03.12 22:00:32 ERROR es[][o.e.b.Bootstrap] Exception
+java.lang.IllegalStateException: failed to obtain node locks, tried [[C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\data\es7]] with lock id [0]; maybe these locations are not writable or multiple nodes were started without increasing [node.max_local_storage_nodes] (was [1])?
+	at org.elasticsearch.env.NodeEnvironment.<init>(NodeEnvironment.java:302) ~[elasticsearch-7.10.2.jar:7.10.2]
+	at org.elasticsearch.node.Node.<init>(Node.java:362) ~[elasticsearch-7.10.2.jar:7.10.2]
+	at org.elasticsearch.node.Node.<init>(Node.java:289) ~[elasticsearch-7.10.2.jar:7.10.2]
+	at org.elasticsearch.bootstrap.Bootstrap$5.<init>(Bootstrap.java:227) ~[elasticsearch-7.10.2.jar:7.10.2]
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:227) ~[elasticsearch-7.10.2.jar:7.10.2]
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:393) [elasticsearch-7.10.2.jar:7.10.2]
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:170) [elasticsearch-7.10.2.jar:7.10.2]
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:161) [elasticsearch-7.10.2.jar:7.10.2]
+	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:86) [elasticsearch-7.10.2.jar:7.10.2]
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:127) [elasticsearch-cli-7.10.2.jar:7.10.2]
+	at org.elasticsearch.cli.Command.main(Command.java:90) [elasticsearch-cli-7.10.2.jar:7.10.2]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:126) [elasticsearch-7.10.2.jar:7.10.2]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:92) [elasticsearch-7.10.2.jar:7.10.2]
+2021.03.12 22:00:32 ERROR es[][o.e.b.ElasticsearchUncaughtExceptionHandler] uncaught exception in thread [main]
+org.elasticsearch.bootstrap.StartupException: java.lang.IllegalStateException: failed to obtain node locks, tried [[C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\data\es7]] with lock id [0]; maybe these locations are not writable or multiple nodes were started without increasing [node.max_local_storage_nodes] (was [1])?
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:174) ~[elasticsearch-7.10.2.jar:7.10.2]
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:161) ~[elasticsearch-7.10.2.jar:7.10.2]
+	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:86) ~[elasticsearch-7.10.2.jar:7.10.2]
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:127) ~[elasticsearch-cli-7.10.2.jar:7.10.2]
+	at org.elasticsearch.cli.Command.main(Command.java:90) ~[elasticsearch-cli-7.10.2.jar:7.10.2]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:126) ~[elasticsearch-7.10.2.jar:7.10.2]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:92) ~[elasticsearch-7.10.2.jar:7.10.2]
+Caused by: java.lang.IllegalStateException: failed to obtain node locks, tried [[C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\data\es7]] with lock id [0]; maybe these locations are not writable or multiple nodes were started without increasing [node.max_local_storage_nodes] (was [1])?
+	at org.elasticsearch.env.NodeEnvironment.<init>(NodeEnvironment.java:302) ~[elasticsearch-7.10.2.jar:7.10.2]
+	at org.elasticsearch.node.Node.<init>(Node.java:362) ~[elasticsearch-7.10.2.jar:7.10.2]
+	at org.elasticsearch.node.Node.<init>(Node.java:289) ~[elasticsearch-7.10.2.jar:7.10.2]
+	at org.elasticsearch.bootstrap.Bootstrap$5.<init>(Bootstrap.java:227) ~[elasticsearch-7.10.2.jar:7.10.2]
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:227) ~[elasticsearch-7.10.2.jar:7.10.2]
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:393) ~[elasticsearch-7.10.2.jar:7.10.2]
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:170) ~[elasticsearch-7.10.2.jar:7.10.2]
+	... 6 more
+2021.03.12 22:04:42 INFO  es[][o.e.n.Node] version[7.10.2], pid[11540], build[unknown/unknown/747e1cc71def077253878a59143c1f785afa92b9/2021-01-13T00:42:12.435326Z], OS[Windows 10/10.0/amd64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/11.0.10/11.0.10+8-LTS-162]
+2021.03.12 22:04:42 INFO  es[][o.e.n.Node] JVM home [C:\Program Files\Java\jdk-11.0.10]
+2021.03.12 22:04:42 INFO  es[][o.e.n.Node] JVM arguments [-XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -Djava.io.tmpdir=C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\temp, -XX:ErrorFile=../logs/es_hs_err_pid%p.log, -Des.networkaddress.cache.ttl=60, -Des.networkaddress.cache.negative.ttl=10, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dio.netty.allocator.numDirectArenas=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Djava.locale.providers=COMPAT, -Xmx512m, -Xms512m, -XX:MaxDirectMemorySize=256m, -XX:+HeapDumpOnOutOfMemoryError, -Delasticsearch, -Des.path.home=C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\elasticsearch, -Des.path.conf=C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\temp\conf\es]
+2021.03.12 22:04:48 INFO  es[][o.e.p.PluginsService] loaded module [analysis-common]
+2021.03.12 22:04:48 INFO  es[][o.e.p.PluginsService] loaded module [lang-painless]
+2021.03.12 22:04:48 INFO  es[][o.e.p.PluginsService] loaded module [parent-join]
+2021.03.12 22:04:48 INFO  es[][o.e.p.PluginsService] loaded module [percolator]
+2021.03.12 22:04:48 INFO  es[][o.e.p.PluginsService] loaded module [transport-netty4]
+2021.03.12 22:04:48 INFO  es[][o.e.p.PluginsService] no plugins loaded
+2021.03.12 22:04:49 ERROR es[][o.e.b.Bootstrap] Exception
+java.lang.IllegalStateException: failed to obtain node locks, tried [[C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\data\es7]] with lock id [0]; maybe these locations are not writable or multiple nodes were started without increasing [node.max_local_storage_nodes] (was [1])?
+	at org.elasticsearch.env.NodeEnvironment.<init>(NodeEnvironment.java:302) ~[elasticsearch-7.10.2.jar:7.10.2]
+	at org.elasticsearch.node.Node.<init>(Node.java:362) ~[elasticsearch-7.10.2.jar:7.10.2]
+	at org.elasticsearch.node.Node.<init>(Node.java:289) ~[elasticsearch-7.10.2.jar:7.10.2]
+	at org.elasticsearch.bootstrap.Bootstrap$5.<init>(Bootstrap.java:227) ~[elasticsearch-7.10.2.jar:7.10.2]
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:227) ~[elasticsearch-7.10.2.jar:7.10.2]
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:393) [elasticsearch-7.10.2.jar:7.10.2]
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:170) [elasticsearch-7.10.2.jar:7.10.2]
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:161) [elasticsearch-7.10.2.jar:7.10.2]
+	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:86) [elasticsearch-7.10.2.jar:7.10.2]
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:127) [elasticsearch-cli-7.10.2.jar:7.10.2]
+	at org.elasticsearch.cli.Command.main(Command.java:90) [elasticsearch-cli-7.10.2.jar:7.10.2]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:126) [elasticsearch-7.10.2.jar:7.10.2]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:92) [elasticsearch-7.10.2.jar:7.10.2]
+2021.03.12 22:04:49 ERROR es[][o.e.b.ElasticsearchUncaughtExceptionHandler] uncaught exception in thread [main]
+org.elasticsearch.bootstrap.StartupException: java.lang.IllegalStateException: failed to obtain node locks, tried [[C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\data\es7]] with lock id [0]; maybe these locations are not writable or multiple nodes were started without increasing [node.max_local_storage_nodes] (was [1])?
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:174) ~[elasticsearch-7.10.2.jar:7.10.2]
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:161) ~[elasticsearch-7.10.2.jar:7.10.2]
+	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:86) ~[elasticsearch-7.10.2.jar:7.10.2]
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:127) ~[elasticsearch-cli-7.10.2.jar:7.10.2]
+	at org.elasticsearch.cli.Command.main(Command.java:90) ~[elasticsearch-cli-7.10.2.jar:7.10.2]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:126) ~[elasticsearch-7.10.2.jar:7.10.2]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:92) ~[elasticsearch-7.10.2.jar:7.10.2]
+Caused by: java.lang.IllegalStateException: failed to obtain node locks, tried [[C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\data\es7]] with lock id [0]; maybe these locations are not writable or multiple nodes were started without increasing [node.max_local_storage_nodes] (was [1])?
+	at org.elasticsearch.env.NodeEnvironment.<init>(NodeEnvironment.java:302) ~[elasticsearch-7.10.2.jar:7.10.2]
+	at org.elasticsearch.node.Node.<init>(Node.java:362) ~[elasticsearch-7.10.2.jar:7.10.2]
+	at org.elasticsearch.node.Node.<init>(Node.java:289) ~[elasticsearch-7.10.2.jar:7.10.2]
+	at org.elasticsearch.bootstrap.Bootstrap$5.<init>(Bootstrap.java:227) ~[elasticsearch-7.10.2.jar:7.10.2]
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:227) ~[elasticsearch-7.10.2.jar:7.10.2]
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:393) ~[elasticsearch-7.10.2.jar:7.10.2]
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:170) ~[elasticsearch-7.10.2.jar:7.10.2]
+	... 6 more
+2021.03.12 22:09:12 INFO  es[][o.e.n.Node] version[7.10.2], pid[11696], build[unknown/unknown/747e1cc71def077253878a59143c1f785afa92b9/2021-01-13T00:42:12.435326Z], OS[Windows 10/10.0/amd64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/11.0.10/11.0.10+8-LTS-162]
+2021.03.12 22:09:12 INFO  es[][o.e.n.Node] JVM home [C:\Program Files\Java\jdk-11.0.10]
+2021.03.12 22:09:12 INFO  es[][o.e.n.Node] JVM arguments [-XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -Djava.io.tmpdir=C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\temp, -XX:ErrorFile=../logs/es_hs_err_pid%p.log, -Des.networkaddress.cache.ttl=60, -Des.networkaddress.cache.negative.ttl=10, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dio.netty.allocator.numDirectArenas=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Djava.locale.providers=COMPAT, -Xmx512m, -Xms512m, -XX:MaxDirectMemorySize=256m, -XX:+HeapDumpOnOutOfMemoryError, -Delasticsearch, -Des.path.home=C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\elasticsearch, -Des.path.conf=C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\temp\conf\es]
+2021.03.12 22:09:24 INFO  es[][o.e.p.PluginsService] loaded module [analysis-common]
+2021.03.12 22:09:24 INFO  es[][o.e.p.PluginsService] loaded module [lang-painless]
+2021.03.12 22:09:24 INFO  es[][o.e.p.PluginsService] loaded module [parent-join]
+2021.03.12 22:09:24 INFO  es[][o.e.p.PluginsService] loaded module [percolator]
+2021.03.12 22:09:24 INFO  es[][o.e.p.PluginsService] loaded module [transport-netty4]
+2021.03.12 22:09:24 INFO  es[][o.e.p.PluginsService] no plugins loaded
+2021.03.12 22:09:25 ERROR es[][o.e.b.Bootstrap] Exception
+java.lang.IllegalStateException: failed to obtain node locks, tried [[C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\data\es7]] with lock id [0]; maybe these locations are not writable or multiple nodes were started without increasing [node.max_local_storage_nodes] (was [1])?
+	at org.elasticsearch.env.NodeEnvironment.<init>(NodeEnvironment.java:302) ~[elasticsearch-7.10.2.jar:7.10.2]
+	at org.elasticsearch.node.Node.<init>(Node.java:362) ~[elasticsearch-7.10.2.jar:7.10.2]
+	at org.elasticsearch.node.Node.<init>(Node.java:289) ~[elasticsearch-7.10.2.jar:7.10.2]
+	at org.elasticsearch.bootstrap.Bootstrap$5.<init>(Bootstrap.java:227) ~[elasticsearch-7.10.2.jar:7.10.2]
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:227) ~[elasticsearch-7.10.2.jar:7.10.2]
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:393) [elasticsearch-7.10.2.jar:7.10.2]
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:170) [elasticsearch-7.10.2.jar:7.10.2]
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:161) [elasticsearch-7.10.2.jar:7.10.2]
+	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:86) [elasticsearch-7.10.2.jar:7.10.2]
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:127) [elasticsearch-cli-7.10.2.jar:7.10.2]
+	at org.elasticsearch.cli.Command.main(Command.java:90) [elasticsearch-cli-7.10.2.jar:7.10.2]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:126) [elasticsearch-7.10.2.jar:7.10.2]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:92) [elasticsearch-7.10.2.jar:7.10.2]
+2021.03.12 22:09:25 ERROR es[][o.e.b.ElasticsearchUncaughtExceptionHandler] uncaught exception in thread [main]
+org.elasticsearch.bootstrap.StartupException: java.lang.IllegalStateException: failed to obtain node locks, tried [[C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\data\es7]] with lock id [0]; maybe these locations are not writable or multiple nodes were started without increasing [node.max_local_storage_nodes] (was [1])?
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:174) ~[elasticsearch-7.10.2.jar:7.10.2]
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:161) ~[elasticsearch-7.10.2.jar:7.10.2]
+	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:86) ~[elasticsearch-7.10.2.jar:7.10.2]
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:127) ~[elasticsearch-cli-7.10.2.jar:7.10.2]
+	at org.elasticsearch.cli.Command.main(Command.java:90) ~[elasticsearch-cli-7.10.2.jar:7.10.2]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:126) ~[elasticsearch-7.10.2.jar:7.10.2]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:92) ~[elasticsearch-7.10.2.jar:7.10.2]
+Caused by: java.lang.IllegalStateException: failed to obtain node locks, tried [[C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\data\es7]] with lock id [0]; maybe these locations are not writable or multiple nodes were started without increasing [node.max_local_storage_nodes] (was [1])?
+	at org.elasticsearch.env.NodeEnvironment.<init>(NodeEnvironment.java:302) ~[elasticsearch-7.10.2.jar:7.10.2]
+	at org.elasticsearch.node.Node.<init>(Node.java:362) ~[elasticsearch-7.10.2.jar:7.10.2]
+	at org.elasticsearch.node.Node.<init>(Node.java:289) ~[elasticsearch-7.10.2.jar:7.10.2]
+	at org.elasticsearch.bootstrap.Bootstrap$5.<init>(Bootstrap.java:227) ~[elasticsearch-7.10.2.jar:7.10.2]
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:227) ~[elasticsearch-7.10.2.jar:7.10.2]
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:393) ~[elasticsearch-7.10.2.jar:7.10.2]
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:170) ~[elasticsearch-7.10.2.jar:7.10.2]
+	... 6 more
+2021.03.12 22:37:52 INFO  es[][o.e.n.Node] version[7.10.2], pid[7908], build[unknown/unknown/747e1cc71def077253878a59143c1f785afa92b9/2021-01-13T00:42:12.435326Z], OS[Windows 10/10.0/amd64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/11.0.10/11.0.10+8-LTS-162]
+2021.03.12 22:37:52 INFO  es[][o.e.n.Node] JVM home [C:\Program Files\Java\jdk-11.0.10]
+2021.03.12 22:37:52 INFO  es[][o.e.n.Node] JVM arguments [-XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -Djava.io.tmpdir=C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\temp, -XX:ErrorFile=../logs/es_hs_err_pid%p.log, -Des.networkaddress.cache.ttl=60, -Des.networkaddress.cache.negative.ttl=10, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dio.netty.allocator.numDirectArenas=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Djava.locale.providers=COMPAT, -Xmx512m, -Xms512m, -XX:MaxDirectMemorySize=256m, -XX:+HeapDumpOnOutOfMemoryError, -Delasticsearch, -Des.path.home=C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\elasticsearch, -Des.path.conf=C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\temp\conf\es]
+2021.03.12 22:37:58 INFO  es[][o.e.p.PluginsService] loaded module [analysis-common]
+2021.03.12 22:37:58 INFO  es[][o.e.p.PluginsService] loaded module [lang-painless]
+2021.03.12 22:37:58 INFO  es[][o.e.p.PluginsService] loaded module [parent-join]
+2021.03.12 22:37:58 INFO  es[][o.e.p.PluginsService] loaded module [percolator]
+2021.03.12 22:37:58 INFO  es[][o.e.p.PluginsService] loaded module [transport-netty4]
+2021.03.12 22:37:58 INFO  es[][o.e.p.PluginsService] no plugins loaded
+2021.03.12 22:37:59 INFO  es[][o.e.e.NodeEnvironment] using [1] data paths, mounts [[(C:)]], net usable_space [265.1gb], net total_space [446gb], types [NTFS]
+2021.03.12 22:37:59 INFO  es[][o.e.e.NodeEnvironment] heap size [494.9mb], compressed ordinary object pointers [true]
+2021.03.12 22:38:01 INFO  es[][o.e.n.Node] node name [sonarqube], node ID [1oY7_f72SLCoHnQrOo5juA], cluster name [sonarqube], roles [master, remote_cluster_client, data, ingest]
+2021.03.12 22:38:43 INFO  es[][o.e.t.NettyAllocator] creating NettyAllocator with the following configs: [name=unpooled, suggested_max_allocation_size=1mb, factors={es.unsafe.use_unpooled_allocator=null, g1gc_enabled=false, g1gc_region_size=0b, heap_size=494.9mb}]
+2021.03.12 22:38:44 INFO  es[][o.e.d.DiscoveryModule] using discovery type [zen] and seed hosts providers [settings]
+2021.03.12 22:38:46 WARN  es[][o.e.g.DanglingIndicesState] gateway.auto_import_dangling_indices is disabled, dangling indices will not be automatically detected or imported and must be managed manually
+2021.03.12 22:38:47 INFO  es[][o.e.n.Node] initialized
+2021.03.12 22:38:47 INFO  es[][o.e.n.Node] starting ...
+2021.03.12 22:38:52 INFO  es[][o.e.t.TransportService] publish_address {127.0.0.1:16275}, bound_addresses {127.0.0.1:16275}
+2021.03.12 22:38:54 INFO  es[][o.e.c.c.Coordinator] cluster UUID [aXU-KU4dRvmJlchn1Uq2-g]
+2021.03.12 22:38:54 INFO  es[][o.e.c.s.MasterService] elected-as-master ([1] nodes joined)[{sonarqube}{1oY7_f72SLCoHnQrOo5juA}{U5hquADtRfKMQyXoa4sSOg}{127.0.0.1}{127.0.0.1:16275}{dimr}{rack_id=sonarqube} elect leader, _BECOME_MASTER_TASK_, _FINISH_ELECTION_], term: 2, version: 44, delta: master node changed {previous [], current [{sonarqube}{1oY7_f72SLCoHnQrOo5juA}{U5hquADtRfKMQyXoa4sSOg}{127.0.0.1}{127.0.0.1:16275}{dimr}{rack_id=sonarqube}]}
+2021.03.12 22:38:55 INFO  es[][o.e.c.s.ClusterApplierService] master node changed {previous [], current [{sonarqube}{1oY7_f72SLCoHnQrOo5juA}{U5hquADtRfKMQyXoa4sSOg}{127.0.0.1}{127.0.0.1:16275}{dimr}{rack_id=sonarqube}]}, term: 2, version: 44, reason: Publication{term=2, version=44}
+2021.03.12 22:38:55 INFO  es[][o.e.h.AbstractHttpServerTransport] publish_address {127.0.0.1:9001}, bound_addresses {127.0.0.1:9001}
+2021.03.12 22:38:55 INFO  es[][o.e.n.Node] started
+2021.03.12 22:38:56 INFO  es[][o.e.g.GatewayService] recovered [7] indices into cluster_state
+2021.03.12 22:39:19 INFO  es[][o.e.c.r.a.AllocationService] Cluster health status changed from [RED] to [GREEN] (reason: [shards started [[metadatas][0]]]).
+2021.03.12 22:59:53 INFO  es[][o.e.n.Node] version[7.10.2], pid[9800], build[unknown/unknown/747e1cc71def077253878a59143c1f785afa92b9/2021-01-13T00:42:12.435326Z], OS[Windows 10/10.0/amd64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/11.0.10/11.0.10+8-LTS-162]
+2021.03.12 22:59:53 INFO  es[][o.e.n.Node] JVM home [C:\Program Files\Java\jdk-11.0.10]
+2021.03.12 22:59:53 INFO  es[][o.e.n.Node] JVM arguments [-XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -Djava.io.tmpdir=C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\temp, -XX:ErrorFile=../logs/es_hs_err_pid%p.log, -Des.networkaddress.cache.ttl=60, -Des.networkaddress.cache.negative.ttl=10, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dio.netty.allocator.numDirectArenas=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Djava.locale.providers=COMPAT, -Xmx512m, -Xms512m, -XX:MaxDirectMemorySize=256m, -XX:+HeapDumpOnOutOfMemoryError, -Delasticsearch, -Des.path.home=C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\elasticsearch, -Des.path.conf=C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\temp\conf\es]
+2021.03.12 22:59:56 INFO  es[][o.e.p.PluginsService] loaded module [analysis-common]
+2021.03.12 22:59:56 INFO  es[][o.e.p.PluginsService] loaded module [lang-painless]
+2021.03.12 22:59:56 INFO  es[][o.e.p.PluginsService] loaded module [parent-join]
+2021.03.12 22:59:56 INFO  es[][o.e.p.PluginsService] loaded module [percolator]
+2021.03.12 22:59:56 INFO  es[][o.e.p.PluginsService] loaded module [transport-netty4]
+2021.03.12 22:59:56 INFO  es[][o.e.p.PluginsService] no plugins loaded
+2021.03.12 22:59:57 INFO  es[][o.e.e.NodeEnvironment] using [1] data paths, mounts [[(C:)]], net usable_space [265.2gb], net total_space [446gb], types [NTFS]
+2021.03.12 22:59:57 INFO  es[][o.e.e.NodeEnvironment] heap size [494.9mb], compressed ordinary object pointers [true]
+2021.03.12 22:59:58 INFO  es[][o.e.n.Node] node name [sonarqube], node ID [1oY7_f72SLCoHnQrOo5juA], cluster name [sonarqube], roles [master, remote_cluster_client, data, ingest]
+2021.03.12 23:00:17 INFO  es[][o.e.t.NettyAllocator] creating NettyAllocator with the following configs: [name=unpooled, suggested_max_allocation_size=1mb, factors={es.unsafe.use_unpooled_allocator=null, g1gc_enabled=false, g1gc_region_size=0b, heap_size=494.9mb}]
+2021.03.12 23:00:17 INFO  es[][o.e.d.DiscoveryModule] using discovery type [zen] and seed hosts providers [settings]
+2021.03.12 23:00:19 WARN  es[][o.e.g.DanglingIndicesState] gateway.auto_import_dangling_indices is disabled, dangling indices will not be automatically detected or imported and must be managed manually
+2021.03.12 23:00:20 INFO  es[][o.e.n.Node] initialized
+2021.03.12 23:00:20 INFO  es[][o.e.n.Node] starting ...
+2021.03.12 23:00:23 INFO  es[][o.e.t.TransportService] publish_address {127.0.0.1:49787}, bound_addresses {127.0.0.1:49787}
+2021.03.12 23:00:24 INFO  es[][o.e.c.c.Coordinator] cluster UUID [aXU-KU4dRvmJlchn1Uq2-g]
+2021.03.12 23:00:24 INFO  es[][o.e.c.s.MasterService] elected-as-master ([1] nodes joined)[{sonarqube}{1oY7_f72SLCoHnQrOo5juA}{p1gbxlqGRjGkicRPaqJtDQ}{127.0.0.1}{127.0.0.1:49787}{dimr}{rack_id=sonarqube} elect leader, _BECOME_MASTER_TASK_, _FINISH_ELECTION_], term: 3, version: 68, delta: master node changed {previous [], current [{sonarqube}{1oY7_f72SLCoHnQrOo5juA}{p1gbxlqGRjGkicRPaqJtDQ}{127.0.0.1}{127.0.0.1:49787}{dimr}{rack_id=sonarqube}]}
+2021.03.12 23:00:25 INFO  es[][o.e.c.s.ClusterApplierService] master node changed {previous [], current [{sonarqube}{1oY7_f72SLCoHnQrOo5juA}{p1gbxlqGRjGkicRPaqJtDQ}{127.0.0.1}{127.0.0.1:49787}{dimr}{rack_id=sonarqube}]}, term: 3, version: 68, reason: Publication{term=3, version=68}
+2021.03.12 23:00:25 INFO  es[][o.e.h.AbstractHttpServerTransport] publish_address {127.0.0.1:9001}, bound_addresses {127.0.0.1:9001}
+2021.03.12 23:00:25 INFO  es[][o.e.n.Node] started
+2021.03.12 23:00:25 INFO  es[][o.e.g.GatewayService] recovered [7] indices into cluster_state
+2021.03.12 23:00:35 INFO  es[][o.e.c.r.a.AllocationService] Cluster health status changed from [RED] to [GREEN] (reason: [shards started [[metadatas][0]]]).

@@ -1,0 +1,30 @@
+stages:
+  - Tests
+  - Calidad
+
+UnitTests:
+  image: node:latest
+  stage: Tests
+  before_script:
+    - cd Cliente/
+    - npm i
+    - npm install mocha
+    - npm install chai
+  script:
+    - npm run test
+  after_script:
+    - echo "Pruebas unitarias finalizadas"
+  only:
+    - master
+
+QualityTests:
+  image: node:latest
+  stage: Calidad
+  before_script:
+    - npm i
+  script:
+    - sonar-scanner
+  after_script:
+    - echo "Pruebas de calidad finalizadas"
+  only:
+    - master

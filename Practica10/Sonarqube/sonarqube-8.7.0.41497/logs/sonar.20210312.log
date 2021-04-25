@@ -1,0 +1,280 @@
+OpenSCManager failed - Access is denied. (0x5)
+--> Wrapper Started as Console
+Launching a JVM...
+Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+  Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+
+
+WrapperSimpleApp: Encountered an error running main: java.lang.IllegalStateException: SonarQube requires Java 11 to run
+java.lang.IllegalStateException: SonarQube requires Java 11 to run
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:508)
+	at org.sonar.application.App.checkJavaVersion(App.java:93)
+	at org.sonar.application.App.start(App.java:56)
+	at org.sonar.application.App.main(App.java:97)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.tanukisoftware.wrapper.WrapperSimpleApp.run(WrapperSimpleApp.java:240)
+	at java.lang.Thread.run(Unknown Source)
+<-- Wrapper Stopped
+--> Wrapper Started as Console
+Launching a JVM...
+Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+  Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+
+2021.03.12 18:08:16 INFO  app[][o.s.a.AppFileSystem] Cleaning or creating temp directory C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\temp
+2021.03.12 18:08:17 INFO  app[][o.s.a.es.EsSettings] Elasticsearch listening on [HTTP: 127.0.0.1:9001, TCP: 127.0.0.1:2742]
+2021.03.12 18:08:17 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='es', ipcIndex=1, logFilenamePrefix=es]] from [C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\elasticsearch]: C:\Program Files\Java\jdk-11.0.10\bin\java -XX:+UseConcMarkSweepGC -XX:CMSInitiatingOccupancyFraction=75 -XX:+UseCMSInitiatingOccupancyOnly -Djava.io.tmpdir=C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\temp -XX:ErrorFile=../logs/es_hs_err_pid%p.log -Des.networkaddress.cache.ttl=60 -Des.networkaddress.cache.negative.ttl=10 -XX:+AlwaysPreTouch -Xss1m -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djna.nosys=true -XX:-OmitStackTraceInFastThrow -Dio.netty.noUnsafe=true -Dio.netty.noKeySetOptimization=true -Dio.netty.recycler.maxCapacityPerThread=0 -Dio.netty.allocator.numDirectArenas=0 -Dlog4j.shutdownHookEnabled=false -Dlog4j2.disable.jmx=true -Djava.locale.providers=COMPAT -Xmx512m -Xms512m -XX:MaxDirectMemorySize=256m -XX:+HeapDumpOnOutOfMemoryError -Delasticsearch -Des.path.home=C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\elasticsearch -Des.path.conf=C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\temp\conf\es -cp lib/* org.elasticsearch.bootstrap.Elasticsearch
+2021.03.12 18:08:17 INFO  app[][o.s.a.SchedulerImpl] Waiting for Elasticsearch to be up and running
+Java HotSpot(TM) 64-Bit Server VM warning: Option UseConcMarkSweepGC was deprecated in version 9.0 and will likely be removed in a future release.
+2021.03.12 18:09:05 INFO  app[][o.s.a.SchedulerImpl] Process[es] is up
+2021.03.12 18:09:05 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='web', ipcIndex=2, logFilenamePrefix=web]] from [C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497]: C:\Program Files\Java\jdk-11.0.10\bin\java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\temp -XX:-OmitStackTraceInFastThrow --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -Dhttp.nonProxyHosts=localhost|127.*|[::1] -cp ./lib/common/*;C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\lib\jdbc\h2\h2-1.4.199.jar org.sonar.server.app.WebServer C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\temp\sq-process5464422639279995827properties
+2021.03.12 18:12:23 WARN  app[][startup] ####################################################################################################################
+2021.03.12 18:12:23 WARN  app[][startup] Default Administrator credentials are still being used. Make sure to change the password or deactivate the account.
+2021.03.12 18:12:23 WARN  app[][startup] ####################################################################################################################
+2021.03.12 18:12:29 INFO  app[][o.s.a.SchedulerImpl] Process[web] is up
+2021.03.12 18:12:29 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='ce', ipcIndex=3, logFilenamePrefix=ce]] from [C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497]: C:\Program Files\Java\jdk-11.0.10\bin\java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\temp -XX:-OmitStackTraceInFastThrow --add-opens=java.base/java.util=ALL-UNNAMED -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -Dhttp.nonProxyHosts=localhost|127.*|[::1] -cp ./lib/common/*;C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\lib\jdbc\h2\h2-1.4.199.jar org.sonar.ce.app.CeServer C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\temp\sq-process13116805109091485061properties
+2021.03.12 18:12:52 INFO  app[][o.s.a.SchedulerImpl] Process[ce] is up
+2021.03.12 18:12:52 INFO  app[][o.s.a.SchedulerImpl] SonarQube is up
+CTRL-C trapped.  Shutting down.
+2021.03.12 21:52:13 INFO  app[][o.s.a.SchedulerImpl] Stopping SonarQube
+2021.03.12 21:52:14 INFO  app[][o.s.a.SchedulerImpl] Process[ce] is stopped
+<-- Wrapper Stopped
+--> Wrapper Started as Console
+Launching a JVM...
+Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+  Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+
+2021.03.12 21:52:33 INFO  app[][o.s.a.AppFileSystem] Cleaning or creating temp directory C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\temp
+2021.03.12 21:52:33 INFO  app[][o.s.a.es.EsSettings] Elasticsearch listening on [HTTP: 127.0.0.1:9001, TCP: 127.0.0.1:1124]
+2021.03.12 21:52:33 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='es', ipcIndex=1, logFilenamePrefix=es]] from [C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\elasticsearch]: C:\Program Files\Java\jdk-11.0.10\bin\java -XX:+UseConcMarkSweepGC -XX:CMSInitiatingOccupancyFraction=75 -XX:+UseCMSInitiatingOccupancyOnly -Djava.io.tmpdir=C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\temp -XX:ErrorFile=../logs/es_hs_err_pid%p.log -Des.networkaddress.cache.ttl=60 -Des.networkaddress.cache.negative.ttl=10 -XX:+AlwaysPreTouch -Xss1m -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djna.nosys=true -XX:-OmitStackTraceInFastThrow -Dio.netty.noUnsafe=true -Dio.netty.noKeySetOptimization=true -Dio.netty.recycler.maxCapacityPerThread=0 -Dio.netty.allocator.numDirectArenas=0 -Dlog4j.shutdownHookEnabled=false -Dlog4j2.disable.jmx=true -Djava.locale.providers=COMPAT -Xmx512m -Xms512m -XX:MaxDirectMemorySize=256m -XX:+HeapDumpOnOutOfMemoryError -Delasticsearch -Des.path.home=C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\elasticsearch -Des.path.conf=C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\temp\conf\es -cp lib/* org.elasticsearch.bootstrap.Elasticsearch
+2021.03.12 21:52:33 INFO  app[][o.s.a.SchedulerImpl] Waiting for Elasticsearch to be up and running
+Java HotSpot(TM) 64-Bit Server VM warning: Option UseConcMarkSweepGC was deprecated in version 9.0 and will likely be removed in a future release.
+2021.03.12 21:52:39 INFO  app[][o.s.a.SchedulerImpl] Process[es] is up
+2021.03.12 21:52:39 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='web', ipcIndex=2, logFilenamePrefix=web]] from [C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497]: C:\Program Files\Java\jdk-11.0.10\bin\java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\temp -XX:-OmitStackTraceInFastThrow --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -Dhttp.nonProxyHosts=localhost|127.*|[::1] -cp ./lib/common/*;C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\lib\jdbc\h2\h2-1.4.199.jar org.sonar.server.app.WebServer C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\temp\sq-process11717752826188771224properties
+uncaught exception in thread [main]
+java.lang.IllegalStateException: failed to obtain node locks, tried [[C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\data\es7]] with lock id [0]; maybe these locations are not writable or multiple nodes were started without increasing [node.max_local_storage_nodes] (was [1])?
+	at org.elasticsearch.env.NodeEnvironment.<init>(NodeEnvironment.java:302)
+	at org.elasticsearch.node.Node.<init>(Node.java:362)
+	at org.elasticsearch.node.Node.<init>(Node.java:289)
+	at org.elasticsearch.bootstrap.Bootstrap$5.<init>(Bootstrap.java:227)
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:227)
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:393)
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:170)
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:161)
+	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:86)
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:127)
+	at org.elasticsearch.cli.Command.main(Command.java:90)
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:126)
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:92)
+For complete error details, refer to the log at C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\logs\sonarqube.log
+2021.03.12 21:53:06 WARN  app[][o.s.a.p.AbstractManagedProcess] Process exited with exit value [es]: 1
+2021.03.12 21:53:06 INFO  app[][o.s.a.SchedulerImpl] Process[es] is stopped
+2021.03.12 21:53:26 INFO  app[][o.s.a.SchedulerImpl] Process[web] is stopped
+2021.03.12 21:53:26 INFO  app[][o.s.a.SchedulerImpl] SonarQube is stopped
+<-- Wrapper Stopped
+--> Wrapper Started as Console
+Launching a JVM...
+Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+  Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+
+2021.03.12 21:53:50 INFO  app[][o.s.a.AppFileSystem] Cleaning or creating temp directory C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\temp
+2021.03.12 21:53:50 INFO  app[][o.s.a.es.EsSettings] Elasticsearch listening on [HTTP: 127.0.0.1:9001, TCP: 127.0.0.1:1162]
+2021.03.12 21:53:50 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='es', ipcIndex=1, logFilenamePrefix=es]] from [C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\elasticsearch]: C:\Program Files\Java\jdk-11.0.10\bin\java -XX:+UseConcMarkSweepGC -XX:CMSInitiatingOccupancyFraction=75 -XX:+UseCMSInitiatingOccupancyOnly -Djava.io.tmpdir=C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\temp -XX:ErrorFile=../logs/es_hs_err_pid%p.log -Des.networkaddress.cache.ttl=60 -Des.networkaddress.cache.negative.ttl=10 -XX:+AlwaysPreTouch -Xss1m -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djna.nosys=true -XX:-OmitStackTraceInFastThrow -Dio.netty.noUnsafe=true -Dio.netty.noKeySetOptimization=true -Dio.netty.recycler.maxCapacityPerThread=0 -Dio.netty.allocator.numDirectArenas=0 -Dlog4j.shutdownHookEnabled=false -Dlog4j2.disable.jmx=true -Djava.locale.providers=COMPAT -Xmx512m -Xms512m -XX:MaxDirectMemorySize=256m -XX:+HeapDumpOnOutOfMemoryError -Delasticsearch -Des.path.home=C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\elasticsearch -Des.path.conf=C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\temp\conf\es -cp lib/* org.elasticsearch.bootstrap.Elasticsearch
+2021.03.12 21:53:50 INFO  app[][o.s.a.SchedulerImpl] Waiting for Elasticsearch to be up and running
+Java HotSpot(TM) 64-Bit Server VM warning: Option UseConcMarkSweepGC was deprecated in version 9.0 and will likely be removed in a future release.
+2021.03.12 21:53:55 INFO  app[][o.s.a.SchedulerImpl] Process[es] is up
+2021.03.12 21:53:55 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='web', ipcIndex=2, logFilenamePrefix=web]] from [C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497]: C:\Program Files\Java\jdk-11.0.10\bin\java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\temp -XX:-OmitStackTraceInFastThrow --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -Dhttp.nonProxyHosts=localhost|127.*|[::1] -cp ./lib/common/*;C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\lib\jdbc\h2\h2-1.4.199.jar org.sonar.server.app.WebServer C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\temp\sq-process6416800900703847323properties
+uncaught exception in thread [main]
+java.lang.IllegalStateException: failed to obtain node locks, tried [[C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\data\es7]] with lock id [0]; maybe these locations are not writable or multiple nodes were started without increasing [node.max_local_storage_nodes] (was [1])?
+	at org.elasticsearch.env.NodeEnvironment.<init>(NodeEnvironment.java:302)
+	at org.elasticsearch.node.Node.<init>(Node.java:362)
+	at org.elasticsearch.node.Node.<init>(Node.java:289)
+	at org.elasticsearch.bootstrap.Bootstrap$5.<init>(Bootstrap.java:227)
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:227)
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:393)
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:170)
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:161)
+	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:86)
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:127)
+	at org.elasticsearch.cli.Command.main(Command.java:90)
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:126)
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:92)
+For complete error details, refer to the log at C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\logs\sonarqube.log
+2021.03.12 21:54:22 WARN  app[][o.s.a.p.AbstractManagedProcess] Process exited with exit value [es]: 1
+2021.03.12 21:54:22 INFO  app[][o.s.a.SchedulerImpl] Process[es] is stopped
+2021.03.12 21:54:42 INFO  app[][o.s.a.SchedulerImpl] Process[web] is stopped
+2021.03.12 21:54:42 INFO  app[][o.s.a.SchedulerImpl] SonarQube is stopped
+<-- Wrapper Stopped
+--> Wrapper Started as Console
+Launching a JVM...
+Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+  Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+
+2021.03.12 21:58:15 INFO  app[][o.s.a.AppFileSystem] Cleaning or creating temp directory C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\temp
+2021.03.12 21:58:15 INFO  app[][o.s.a.es.EsSettings] Elasticsearch listening on [HTTP: 127.0.0.1:9001, TCP: 127.0.0.1:1220]
+2021.03.12 21:58:16 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='es', ipcIndex=1, logFilenamePrefix=es]] from [C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\elasticsearch]: C:\Program Files\Java\jdk-11.0.10\bin\java -XX:+UseConcMarkSweepGC -XX:CMSInitiatingOccupancyFraction=75 -XX:+UseCMSInitiatingOccupancyOnly -Djava.io.tmpdir=C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\temp -XX:ErrorFile=../logs/es_hs_err_pid%p.log -Des.networkaddress.cache.ttl=60 -Des.networkaddress.cache.negative.ttl=10 -XX:+AlwaysPreTouch -Xss1m -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djna.nosys=true -XX:-OmitStackTraceInFastThrow -Dio.netty.noUnsafe=true -Dio.netty.noKeySetOptimization=true -Dio.netty.recycler.maxCapacityPerThread=0 -Dio.netty.allocator.numDirectArenas=0 -Dlog4j.shutdownHookEnabled=false -Dlog4j2.disable.jmx=true -Djava.locale.providers=COMPAT -Xmx512m -Xms512m -XX:MaxDirectMemorySize=256m -XX:+HeapDumpOnOutOfMemoryError -Delasticsearch -Des.path.home=C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\elasticsearch -Des.path.conf=C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\temp\conf\es -cp lib/* org.elasticsearch.bootstrap.Elasticsearch
+2021.03.12 21:58:16 INFO  app[][o.s.a.SchedulerImpl] Waiting for Elasticsearch to be up and running
+Java HotSpot(TM) 64-Bit Server VM warning: Option UseConcMarkSweepGC was deprecated in version 9.0 and will likely be removed in a future release.
+2021.03.12 21:58:24 INFO  app[][o.s.a.SchedulerImpl] Process[es] is up
+2021.03.12 21:58:24 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='web', ipcIndex=2, logFilenamePrefix=web]] from [C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497]: C:\Program Files\Java\jdk-11.0.10\bin\java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\temp -XX:-OmitStackTraceInFastThrow --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -Dhttp.nonProxyHosts=localhost|127.*|[::1] -cp ./lib/common/*;C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\lib\jdbc\h2\h2-1.4.199.jar org.sonar.server.app.WebServer C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\temp\sq-process196900976714927289properties
+uncaught exception in thread [main]
+java.lang.IllegalStateException: failed to obtain node locks, tried [[C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\data\es7]] with lock id [0]; maybe these locations are not writable or multiple nodes were started without increasing [node.max_local_storage_nodes] (was [1])?
+	at org.elasticsearch.env.NodeEnvironment.<init>(NodeEnvironment.java:302)
+	at org.elasticsearch.node.Node.<init>(Node.java:362)
+	at org.elasticsearch.node.Node.<init>(Node.java:289)
+	at org.elasticsearch.bootstrap.Bootstrap$5.<init>(Bootstrap.java:227)
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:227)
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:393)
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:170)
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:161)
+	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:86)
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:127)
+	at org.elasticsearch.cli.Command.main(Command.java:90)
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:126)
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:92)
+For complete error details, refer to the log at C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\logs\sonarqube.log
+2021.03.12 21:58:51 WARN  app[][o.s.a.p.AbstractManagedProcess] Process exited with exit value [es]: 1
+2021.03.12 21:58:51 INFO  app[][o.s.a.SchedulerImpl] Process[es] is stopped
+2021.03.12 21:59:18 INFO  app[][o.s.a.SchedulerImpl] Process[web] is stopped
+2021.03.12 21:59:18 INFO  app[][o.s.a.SchedulerImpl] SonarQube is stopped
+<-- Wrapper Stopped
+OpenSCManager failed - Access is denied. (0x5)
+--> Wrapper Started as Console
+Launching a JVM...
+Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+  Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+
+2021.03.12 22:00:01 INFO  app[][o.s.a.AppFileSystem] Cleaning or creating temp directory C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\temp
+2021.03.12 22:00:01 INFO  app[][o.s.a.es.EsSettings] Elasticsearch listening on [HTTP: 127.0.0.1:9001, TCP: 127.0.0.1:1264]
+2021.03.12 22:00:02 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='es', ipcIndex=1, logFilenamePrefix=es]] from [C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\elasticsearch]: C:\Program Files\Java\jdk-11.0.10\bin\java -XX:+UseConcMarkSweepGC -XX:CMSInitiatingOccupancyFraction=75 -XX:+UseCMSInitiatingOccupancyOnly -Djava.io.tmpdir=C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\temp -XX:ErrorFile=../logs/es_hs_err_pid%p.log -Des.networkaddress.cache.ttl=60 -Des.networkaddress.cache.negative.ttl=10 -XX:+AlwaysPreTouch -Xss1m -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djna.nosys=true -XX:-OmitStackTraceInFastThrow -Dio.netty.noUnsafe=true -Dio.netty.noKeySetOptimization=true -Dio.netty.recycler.maxCapacityPerThread=0 -Dio.netty.allocator.numDirectArenas=0 -Dlog4j.shutdownHookEnabled=false -Dlog4j2.disable.jmx=true -Djava.locale.providers=COMPAT -Xmx512m -Xms512m -XX:MaxDirectMemorySize=256m -XX:+HeapDumpOnOutOfMemoryError -Delasticsearch -Des.path.home=C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\elasticsearch -Des.path.conf=C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\temp\conf\es -cp lib/* org.elasticsearch.bootstrap.Elasticsearch
+2021.03.12 22:00:02 INFO  app[][o.s.a.SchedulerImpl] Waiting for Elasticsearch to be up and running
+Java HotSpot(TM) 64-Bit Server VM warning: Option UseConcMarkSweepGC was deprecated in version 9.0 and will likely be removed in a future release.
+2021.03.12 22:00:06 INFO  app[][o.s.a.SchedulerImpl] Process[es] is up
+2021.03.12 22:00:06 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='web', ipcIndex=2, logFilenamePrefix=web]] from [C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497]: C:\Program Files\Java\jdk-11.0.10\bin\java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\temp -XX:-OmitStackTraceInFastThrow --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -Dhttp.nonProxyHosts=localhost|127.*|[::1] -cp ./lib/common/*;C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\lib\jdbc\h2\h2-1.4.199.jar org.sonar.server.app.WebServer C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\temp\sq-process9269545696670860115properties
+uncaught exception in thread [main]
+java.lang.IllegalStateException: failed to obtain node locks, tried [[C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\data\es7]] with lock id [0]; maybe these locations are not writable or multiple nodes were started without increasing [node.max_local_storage_nodes] (was [1])?
+	at org.elasticsearch.env.NodeEnvironment.<init>(NodeEnvironment.java:302)
+	at org.elasticsearch.node.Node.<init>(Node.java:362)
+	at org.elasticsearch.node.Node.<init>(Node.java:289)
+	at org.elasticsearch.bootstrap.Bootstrap$5.<init>(Bootstrap.java:227)
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:227)
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:393)
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:170)
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:161)
+	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:86)
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:127)
+	at org.elasticsearch.cli.Command.main(Command.java:90)
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:126)
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:92)
+For complete error details, refer to the log at C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\logs\sonarqube.log
+2021.03.12 22:00:34 WARN  app[][o.s.a.p.AbstractManagedProcess] Process exited with exit value [es]: 1
+2021.03.12 22:00:34 INFO  app[][o.s.a.SchedulerImpl] Process[es] is stopped
+2021.03.12 22:00:56 INFO  app[][o.s.a.SchedulerImpl] Process[web] is stopped
+2021.03.12 22:00:56 INFO  app[][o.s.a.SchedulerImpl] SonarQube is stopped
+<-- Wrapper Stopped
+--> Wrapper Started as Console
+Launching a JVM...
+Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+  Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+
+2021.03.12 22:04:17 INFO  app[][o.s.a.AppFileSystem] Cleaning or creating temp directory C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\temp
+2021.03.12 22:04:17 INFO  app[][o.s.a.es.EsSettings] Elasticsearch listening on [HTTP: 127.0.0.1:9001, TCP: 127.0.0.1:1320]
+2021.03.12 22:04:18 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='es', ipcIndex=1, logFilenamePrefix=es]] from [C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\elasticsearch]: C:\Program Files\Java\jdk-11.0.10\bin\java -XX:+UseConcMarkSweepGC -XX:CMSInitiatingOccupancyFraction=75 -XX:+UseCMSInitiatingOccupancyOnly -Djava.io.tmpdir=C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\temp -XX:ErrorFile=../logs/es_hs_err_pid%p.log -Des.networkaddress.cache.ttl=60 -Des.networkaddress.cache.negative.ttl=10 -XX:+AlwaysPreTouch -Xss1m -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djna.nosys=true -XX:-OmitStackTraceInFastThrow -Dio.netty.noUnsafe=true -Dio.netty.noKeySetOptimization=true -Dio.netty.recycler.maxCapacityPerThread=0 -Dio.netty.allocator.numDirectArenas=0 -Dlog4j.shutdownHookEnabled=false -Dlog4j2.disable.jmx=true -Djava.locale.providers=COMPAT -Xmx512m -Xms512m -XX:MaxDirectMemorySize=256m -XX:+HeapDumpOnOutOfMemoryError -Delasticsearch -Des.path.home=C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\elasticsearch -Des.path.conf=C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\temp\conf\es -cp lib/* org.elasticsearch.bootstrap.Elasticsearch
+2021.03.12 22:04:18 INFO  app[][o.s.a.SchedulerImpl] Waiting for Elasticsearch to be up and running
+Java HotSpot(TM) 64-Bit Server VM warning: Option UseConcMarkSweepGC was deprecated in version 9.0 and will likely be removed in a future release.
+2021.03.12 22:04:23 INFO  app[][o.s.a.SchedulerImpl] Process[es] is up
+2021.03.12 22:04:23 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='web', ipcIndex=2, logFilenamePrefix=web]] from [C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497]: C:\Program Files\Java\jdk-11.0.10\bin\java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\temp -XX:-OmitStackTraceInFastThrow --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -Dhttp.nonProxyHosts=localhost|127.*|[::1] -cp ./lib/common/*;C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\lib\jdbc\h2\h2-1.4.199.jar org.sonar.server.app.WebServer C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\temp\sq-process17857736228663603540properties
+uncaught exception in thread [main]
+java.lang.IllegalStateException: failed to obtain node locks, tried [[C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\data\es7]] with lock id [0]; maybe these locations are not writable or multiple nodes were started without increasing [node.max_local_storage_nodes] (was [1])?
+	at org.elasticsearch.env.NodeEnvironment.<init>(NodeEnvironment.java:302)
+	at org.elasticsearch.node.Node.<init>(Node.java:362)
+	at org.elasticsearch.node.Node.<init>(Node.java:289)
+	at org.elasticsearch.bootstrap.Bootstrap$5.<init>(Bootstrap.java:227)
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:227)
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:393)
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:170)
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:161)
+	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:86)
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:127)
+	at org.elasticsearch.cli.Command.main(Command.java:90)
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:126)
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:92)
+For complete error details, refer to the log at C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\logs\sonarqube.log
+2021.03.12 22:04:52 WARN  app[][o.s.a.p.AbstractManagedProcess] Process exited with exit value [es]: 1
+2021.03.12 22:04:52 INFO  app[][o.s.a.SchedulerImpl] Process[es] is stopped
+2021.03.12 22:05:17 INFO  app[][o.s.a.SchedulerImpl] Process[web] is stopped
+2021.03.12 22:05:17 INFO  app[][o.s.a.SchedulerImpl] SonarQube is stopped
+<-- Wrapper Stopped
+--> Wrapper Started as Console
+Launching a JVM...
+Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+  Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+
+2021.03.12 22:08:45 INFO  app[][o.s.a.AppFileSystem] Cleaning or creating temp directory C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\temp
+2021.03.12 22:08:46 INFO  app[][o.s.a.es.EsSettings] Elasticsearch listening on [HTTP: 127.0.0.1:9001, TCP: 127.0.0.1:1381]
+2021.03.12 22:08:46 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='es', ipcIndex=1, logFilenamePrefix=es]] from [C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\elasticsearch]: C:\Program Files\Java\jdk-11.0.10\bin\java -XX:+UseConcMarkSweepGC -XX:CMSInitiatingOccupancyFraction=75 -XX:+UseCMSInitiatingOccupancyOnly -Djava.io.tmpdir=C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\temp -XX:ErrorFile=../logs/es_hs_err_pid%p.log -Des.networkaddress.cache.ttl=60 -Des.networkaddress.cache.negative.ttl=10 -XX:+AlwaysPreTouch -Xss1m -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djna.nosys=true -XX:-OmitStackTraceInFastThrow -Dio.netty.noUnsafe=true -Dio.netty.noKeySetOptimization=true -Dio.netty.recycler.maxCapacityPerThread=0 -Dio.netty.allocator.numDirectArenas=0 -Dlog4j.shutdownHookEnabled=false -Dlog4j2.disable.jmx=true -Djava.locale.providers=COMPAT -Xmx512m -Xms512m -XX:MaxDirectMemorySize=256m -XX:+HeapDumpOnOutOfMemoryError -Delasticsearch -Des.path.home=C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\elasticsearch -Des.path.conf=C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\temp\conf\es -cp lib/* org.elasticsearch.bootstrap.Elasticsearch
+2021.03.12 22:08:46 INFO  app[][o.s.a.SchedulerImpl] Waiting for Elasticsearch to be up and running
+Java HotSpot(TM) 64-Bit Server VM warning: Option UseConcMarkSweepGC was deprecated in version 9.0 and will likely be removed in a future release.
+2021.03.12 22:08:51 INFO  app[][o.s.a.SchedulerImpl] Process[es] is up
+2021.03.12 22:08:51 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='web', ipcIndex=2, logFilenamePrefix=web]] from [C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497]: C:\Program Files\Java\jdk-11.0.10\bin\java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\temp -XX:-OmitStackTraceInFastThrow --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -Dhttp.nonProxyHosts=localhost|127.*|[::1] -cp ./lib/common/*;C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\lib\jdbc\h2\h2-1.4.199.jar org.sonar.server.app.WebServer C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\temp\sq-process12642267904840395613properties
+uncaught exception in thread [main]
+java.lang.IllegalStateException: failed to obtain node locks, tried [[C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\data\es7]] with lock id [0]; maybe these locations are not writable or multiple nodes were started without increasing [node.max_local_storage_nodes] (was [1])?
+	at org.elasticsearch.env.NodeEnvironment.<init>(NodeEnvironment.java:302)
+	at org.elasticsearch.node.Node.<init>(Node.java:362)
+	at org.elasticsearch.node.Node.<init>(Node.java:289)
+	at org.elasticsearch.bootstrap.Bootstrap$5.<init>(Bootstrap.java:227)
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:227)
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:393)
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:170)
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:161)
+	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:86)
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:127)
+	at org.elasticsearch.cli.Command.main(Command.java:90)
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:126)
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:92)
+For complete error details, refer to the log at C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\logs\sonarqube.log
+2021.03.12 22:09:26 WARN  app[][o.s.a.p.AbstractManagedProcess] Process exited with exit value [es]: 1
+2021.03.12 22:09:26 INFO  app[][o.s.a.SchedulerImpl] Process[es] is stopped
+2021.03.12 22:09:46 INFO  app[][o.s.a.SchedulerImpl] Process[web] is stopped
+2021.03.12 22:09:46 INFO  app[][o.s.a.SchedulerImpl] SonarQube is stopped
+<-- Wrapper Stopped
+--> Wrapper Started as Console
+Launching a JVM...
+Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+  Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+
+2021.03.12 22:37:30 INFO  app[][o.s.a.AppFileSystem] Cleaning or creating temp directory C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\temp
+2021.03.12 22:37:30 INFO  app[][o.s.a.es.EsSettings] Elasticsearch listening on [HTTP: 127.0.0.1:9001, TCP: 127.0.0.1:16275]
+2021.03.12 22:37:31 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='es', ipcIndex=1, logFilenamePrefix=es]] from [C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\elasticsearch]: C:\Program Files\Java\jdk-11.0.10\bin\java -XX:+UseConcMarkSweepGC -XX:CMSInitiatingOccupancyFraction=75 -XX:+UseCMSInitiatingOccupancyOnly -Djava.io.tmpdir=C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\temp -XX:ErrorFile=../logs/es_hs_err_pid%p.log -Des.networkaddress.cache.ttl=60 -Des.networkaddress.cache.negative.ttl=10 -XX:+AlwaysPreTouch -Xss1m -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djna.nosys=true -XX:-OmitStackTraceInFastThrow -Dio.netty.noUnsafe=true -Dio.netty.noKeySetOptimization=true -Dio.netty.recycler.maxCapacityPerThread=0 -Dio.netty.allocator.numDirectArenas=0 -Dlog4j.shutdownHookEnabled=false -Dlog4j2.disable.jmx=true -Djava.locale.providers=COMPAT -Xmx512m -Xms512m -XX:MaxDirectMemorySize=256m -XX:+HeapDumpOnOutOfMemoryError -Delasticsearch -Des.path.home=C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\elasticsearch -Des.path.conf=C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\temp\conf\es -cp lib/* org.elasticsearch.bootstrap.Elasticsearch
+2021.03.12 22:37:31 INFO  app[][o.s.a.SchedulerImpl] Waiting for Elasticsearch to be up and running
+Java HotSpot(TM) 64-Bit Server VM warning: Option UseConcMarkSweepGC was deprecated in version 9.0 and will likely be removed in a future release.
+2021.03.12 22:39:20 INFO  app[][o.s.a.SchedulerImpl] Process[es] is up
+2021.03.12 22:39:20 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='web', ipcIndex=2, logFilenamePrefix=web]] from [C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497]: C:\Program Files\Java\jdk-11.0.10\bin\java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\temp -XX:-OmitStackTraceInFastThrow --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -Dhttp.nonProxyHosts=localhost|127.*|[::1] -cp ./lib/common/*;C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\lib\jdbc\h2\h2-1.4.199.jar org.sonar.server.app.WebServer C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\temp\sq-process15192732456136705206properties
+2021.03.12 22:41:29 WARN  app[][startup] ####################################################################################################################
+2021.03.12 22:41:29 WARN  app[][startup] Default Administrator credentials are still being used. Make sure to change the password or deactivate the account.
+2021.03.12 22:41:29 WARN  app[][startup] ####################################################################################################################
+2021.03.12 22:41:30 INFO  app[][o.s.a.SchedulerImpl] Process[web] is up
+2021.03.12 22:41:30 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='ce', ipcIndex=3, logFilenamePrefix=ce]] from [C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497]: C:\Program Files\Java\jdk-11.0.10\bin\java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\temp -XX:-OmitStackTraceInFastThrow --add-opens=java.base/java.util=ALL-UNNAMED -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -Dhttp.nonProxyHosts=localhost|127.*|[::1] -cp ./lib/common/*;C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\lib\jdbc\h2\h2-1.4.199.jar org.sonar.ce.app.CeServer C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\temp\sq-process16512619361771193974properties
+2021.03.12 22:42:07 INFO  app[][o.s.a.SchedulerImpl] Process[ce] is up
+2021.03.12 22:42:07 INFO  app[][o.s.a.SchedulerImpl] SonarQube is up
+--> Wrapper Started as Console
+Launching a JVM...
+Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+  Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+
+2021.03.12 22:59:35 INFO  app[][o.s.a.AppFileSystem] Cleaning or creating temp directory C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\temp
+2021.03.12 22:59:36 INFO  app[][o.s.a.es.EsSettings] Elasticsearch listening on [HTTP: 127.0.0.1:9001, TCP: 127.0.0.1:49787]
+2021.03.12 22:59:36 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='es', ipcIndex=1, logFilenamePrefix=es]] from [C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\elasticsearch]: C:\Program Files\Java\jdk-11.0.10\bin\java -XX:+UseConcMarkSweepGC -XX:CMSInitiatingOccupancyFraction=75 -XX:+UseCMSInitiatingOccupancyOnly -Djava.io.tmpdir=C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\temp -XX:ErrorFile=../logs/es_hs_err_pid%p.log -Des.networkaddress.cache.ttl=60 -Des.networkaddress.cache.negative.ttl=10 -XX:+AlwaysPreTouch -Xss1m -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djna.nosys=true -XX:-OmitStackTraceInFastThrow -Dio.netty.noUnsafe=true -Dio.netty.noKeySetOptimization=true -Dio.netty.recycler.maxCapacityPerThread=0 -Dio.netty.allocator.numDirectArenas=0 -Dlog4j.shutdownHookEnabled=false -Dlog4j2.disable.jmx=true -Djava.locale.providers=COMPAT -Xmx512m -Xms512m -XX:MaxDirectMemorySize=256m -XX:+HeapDumpOnOutOfMemoryError -Delasticsearch -Des.path.home=C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\elasticsearch -Des.path.conf=C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\temp\conf\es -cp lib/* org.elasticsearch.bootstrap.Elasticsearch
+2021.03.12 22:59:36 INFO  app[][o.s.a.SchedulerImpl] Waiting for Elasticsearch to be up and running
+Java HotSpot(TM) 64-Bit Server VM warning: Option UseConcMarkSweepGC was deprecated in version 9.0 and will likely be removed in a future release.
+2021.03.12 23:00:36 INFO  app[][o.s.a.SchedulerImpl] Process[es] is up
+2021.03.12 23:00:36 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='web', ipcIndex=2, logFilenamePrefix=web]] from [C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497]: C:\Program Files\Java\jdk-11.0.10\bin\java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\temp -XX:-OmitStackTraceInFastThrow --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -Dhttp.nonProxyHosts=localhost|127.*|[::1] -cp ./lib/common/*;C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\lib\jdbc\h2\h2-1.4.199.jar org.sonar.server.app.WebServer C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\temp\sq-process513097211280803231properties
+2021.03.12 23:02:12 WARN  app[][startup] ####################################################################################################################
+2021.03.12 23:02:12 WARN  app[][startup] Default Administrator credentials are still being used. Make sure to change the password or deactivate the account.
+2021.03.12 23:02:12 WARN  app[][startup] ####################################################################################################################
+2021.03.12 23:02:12 INFO  app[][o.s.a.SchedulerImpl] Process[web] is up
+2021.03.12 23:02:12 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='ce', ipcIndex=3, logFilenamePrefix=ce]] from [C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497]: C:\Program Files\Java\jdk-11.0.10\bin\java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\temp -XX:-OmitStackTraceInFastThrow --add-opens=java.base/java.util=ALL-UNNAMED -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -Dhttp.nonProxyHosts=localhost|127.*|[::1] -cp ./lib/common/*;C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\lib\jdbc\h2\h2-1.4.199.jar org.sonar.ce.app.CeServer C:\Users\Andrea\Documents\USAC\2021\primer_semestre\Software\Lab\Practicas\Sonarqube\sonarqube-8.7.0.41497\temp\sq-process9853959612865905186properties
+2021.03.12 23:02:35 INFO  app[][o.s.a.SchedulerImpl] Process[ce] is up
+2021.03.12 23:02:35 INFO  app[][o.s.a.SchedulerImpl] SonarQube is up

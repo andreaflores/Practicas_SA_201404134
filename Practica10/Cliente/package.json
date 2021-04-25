@@ -1,0 +1,23 @@
+{
+  "name": "cliente",
+  "version": "1.0.0",
+  "description": "Cliente practica 10",
+  "main": "index.js",
+  "directories": {
+    "test": "mocha ./test --timeout 60000 --exit"
+  },
+  "scripts": {
+    "test": "mocha ./test --timeout 60000 --exit"
+  },
+  "author": "Andrea Lopez",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.3.4",
+    "chai-http": "^4.3.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mocha": "^8.3.2",
+    "morgan": "^1.10.0",
+    "mysql": "^2.18.1"
+  }
+}

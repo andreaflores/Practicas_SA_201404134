@@ -1,0 +1,34 @@
+version: '3.7'
+
+services:
+  cliente:
+    container_name: cliente
+    build:
+      dockerfile: Dockerfile
+      context: ./Cliente
+    ports:
+      - '8090:8090'
+
+  repartidor:
+    container_name: repartidor
+    build:
+      dockerfile: Dockerfile
+      context: ./Repartidor
+    ports:
+      - '8091:8091'
+
+  restaurante:
+    container_name: restaurante
+    build:
+      dockerfile: Dockerfile
+      context: ./Restaurante
+    ports:
+      - '8092:8092'
+
+  esb:
+    container_name: esb
+    build:
+      dockerfile: Dockerfile
+      context: ./ESB
+    ports:
+      - '8089:8089'

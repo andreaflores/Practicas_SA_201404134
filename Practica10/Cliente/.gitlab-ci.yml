@@ -1,0 +1,16 @@
+stages:
+  - Tests
+
+TestCliente:
+  image: node:latest
+  stage: Tests
+  before_script:
+    - npm i
+    - npm install mocha
+    - npm install chai
+  script:
+    - npm run test
+  after_script:
+    - echo "Pruebas Unitarias finalizadas"
+  only:
+    - master
