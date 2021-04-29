@@ -1,0 +1,11 @@
+ID del proyecto: practica-sa
+IP de la maquina: 35.247.9.112
+
+from flask import Flask
+app = Flask(__name__)
+
+@app.route('/')
+def hello():
+    return 'Practica 11 terminada :)'
+
+app.run(host='0.0.0.0')
